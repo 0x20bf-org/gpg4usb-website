@@ -5,7 +5,8 @@
   background-color: #fff;
   padding: 0.5em;
   width: 10em;
-  margin: 0;
+  margin-left: 12px;
+  text-align:center;
 }
 
 #menu li {
@@ -22,7 +23,7 @@
 }
 
 #menu a {
-  font-family: arial, helvetica, sans-serif;
+  font-family: courier, courier new;
   text-decoration: none;
   color: #000;
   width: 9em;
@@ -34,11 +35,9 @@
 }
 
 #content {
-  margin-left: 12em;
-}
-
-p {
-
+  font-family: courier, courier new;
+  font-size: 0.9em;  
+  margin-left: 15em;
 }
 
 h1 {

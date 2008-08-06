@@ -9,21 +9,40 @@
 </head>
 
 <body>
-
+<div style="width:800px">
+<img src="img/trash-logo.jpg" style="width:800px;height:100px;border:1px;margin:15px" alt="gpg4usb" />
 <ul id="menu">
 <li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
 <li class="active" onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
 <li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
 <li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
 <li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
-<li onclick="window.location.href='contact.html';"><a href="contact.html">Contact</a></li>
+<li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
 </ul>
 
 <div id="content">
-<h1>About Ggpg4Usb</h1>
-<p>some text...</p>
-
-
+<h1>About gpg4usb</h1>
+<p>To say it straight in only one sentence: gpg4usb is a very easy to use portable-application, which combines 
+a simple text-editor with a <a href="http://www.gnupg.org/">GnuPG</a>-frontend to write, encrypt and 
+decrypt your text-messages. gpg4usb should work on almost any computer you're working on, should it be a 
+Linux-machine or even one with a Microsoft-OS running.<br /><br />
+Almost the only thing required is an available usb-port you are allowed to access. With this application you 
+can write safe and encrypted messages anywhere you are: should it be an internet-cafe, at work or somewhere else
+ on holiday... and you always have the encryption-keys available for usage!<br /><br />
+The usage of gpg4usb should be highly self-describing, since the user-interface and all the options it offers
+are clear cut: Simply execute the binary on your usb-pendrive and start typing e.g. the Mailtext you want to
+be encrypted. If you're done, choose the right gpg/pgp-key for the person you are writing to and hit the 
+encrypt-icon at the top of the application-window. The resulting encrypted text you can save as a text-file to send
+it as mail-attachment, or copy it directly into your mail-user-agent or webmail-website. To make sure, 
+you can read this message by yourself afterwards, encrypt it for the recipient and to yourself at the same time - if you 
+want, you can mark as much keys as you want to encrypt for.<br /><br />
+You want to add a gpg/pgp-key to your mobile keyring? Nothing's easier than that: just hit the <em>crypto</em>-menue-entry and
+choose <em>Import Key from File</em> or <em>Import Key from Editor</em>. This means that it's possible to 
+import an ascii-armored pubkey via file-dialog, or via copy&paste into your editor-window. If you find a 
+key e.g. on a website, just copy it, paste it into the gpg4usb-editor and hit <em>Import Key from Editor</em> - that's it, 
+and the key shows up on your keyring!<br /><br />    
+We are trying to let things work as easy as possible. If you have any problems with this application, if 
+you don't know how to handle it, or if you find any bugs: <a href="contact.php">Please contact us!</a></p>
 </div>
 </body>
 </html>
