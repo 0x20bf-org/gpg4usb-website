@@ -5,7 +5,7 @@
   background-color: #fff;
   padding: 0.5em;
   width: 10em;
-  margin-left: 12px;
+  margin-left: 3em;
   text-align:center;
 }
 
@@ -14,30 +14,33 @@
   padding: 0.2em;
   border-top: 1px dotted;
   border-bottom: 1px dotted;
-  background-color: #eee;
+  background-color: #bccece;
   cursor: pointer;
 }
 
 #menu li:hover {
-  background-color: #ACCDFF;
+  background-color: #c8e3e3;
 }
 
 #menu a {
-  font-family: courier, courier new;
+  font-family: arial, helvetica, sans-serif;
   text-decoration: none;
   color: #000;
   width: 9em;
 }
 
 #menu li.active {
-  background-color: #008DFF;
-
+  background-color: #308196;
 }
 
 #content {
-  font-family: courier, courier new;
-  font-size: 0.9em;  
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1em;  
   margin-left: 15em;
+}
+
+p {
+  text-align:justify;
 }
 
 h1 {
@@ -47,6 +50,10 @@ h1 {
 h2 {
   font-size:1.0em;
 }
+
+a {color:#308196;text-decoration:none;}
+/*a:hover {background-color:#c8e3e3;color:#308196}
+a:visited {color:#F85252;}*/
 
 #lightbox{
   background-color:#eee;
