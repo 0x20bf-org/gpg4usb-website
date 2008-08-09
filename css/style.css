@@ -51,6 +51,11 @@ h2 {
   font-size:1.0em;
 }
 
+h3 {
+  font-size:0.8em;
+  font-weight:normal;
+}
+
 a {color:#308196;text-decoration:none;}
 /*a:hover {background-color:#c8e3e3;color:#308196}
 a:visited {color:#F85252;}*/

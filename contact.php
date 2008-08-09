@@ -38,8 +38,8 @@ $Zahl_2 = intval(rand(1, 10));
 
 <div id="content">
 <h1>Contact</h1>
-<p>If you have questions regarding this Project, contact us via email at 
-gpg4usb [AT] cpunk.de, or meet us via jabber in our channel <br />gpg4usb@conference.jabber.ccc.de<br /><br />  
+<p>If you have questions regarding this Project, contact us via email at <br/>
+gpg4usb [AT] cpunk.de<br /> or meet us via jabber in our channel <br />gpg4usb@conference.jabber.ccc.de<br /><br />  
 To simplify things up, you can just use this form to send us a message:</p> 
 
 <?php
@@ -246,9 +246,38 @@ if($_COOKIE["spam_protection"] == "spam_protection")
 </tr>
 </table>
 </form>
-
-<h2>gpg-key:</h2>
-<p>[our key]</p>
+<br /><br />
+<h2>Our gpg-key:</h2>
+<h3>-----BEGIN PGP PUBLIC KEY BLOCK-----<br />
+Version: GnuPG v1.4.9 (GNU/Linux)<br />
+<br />
+mQGiBEidtoMRBACxTEK5fYugdih9OhO2B3J4v860xVxcaXoveXgykqglNbBXT0+5<br />
+5R1TQu7CIqVHoYb8s3BMaHHarwa+GXvw6ZesV1JVAUt+665AglxuHwQ3IrsSaWlp<br />
+JFwXXaGgrwWyn/aTelzCxom4aw8+DVEL/l0BvYxhgyXoE46VyGdei91jEwCgm0tW<br />
+nd9EyRdae+8e4xL2NSJX3EcEAJTu6LHa/z0BnUsu48ZdFWqhZT7hI2HROyQ18EhH<br />
+fuMhUlynT1O+hFcR9a1CCz7UqHa5ZMGulW4eddWWbeuxIG5nu7LlktD8+qLxXa7d<br />
+JuyPGJgyqC2iW5JNMTTQlaR2/QA0Y1YKNIR6CzkSkR0T4c2pFsVzw0Jqp1BKiJFb<br />
+JYV8BACfd/lPrhkahkCBgVJgrZmRKq6GAqG8+4kNoleGo9x8bTEtt/+WBxrxsxLe<br />
+CQ5oDj56Or+N7cEcOOlK0bW4oM/qFZMLFALhW9a6kFW+z8JqVkb+UeAUZErMj+uI<br />
+uafj/E1Iz2ayN3t43DV44/7/4rfYlaOknm0FqH2emK42NXjahbQiZ3BnNHVzYi1w<br />
+cm9qZWN0IDxncGc0dXNiQGNwdW5rLmRlPohgBBMRAgAgBQJInbaDAhsjBgsJCAcD<br />
+AgQVAggDBBYCAwECHgECF4AACgkQgKRDIS7NczpjuACfYnCtiAso1H9vp8IHVB22<br />
+cLuGP6sAn28nflukImttcSsbgiAol23/89rRuQINBEidtoMQCADAjZhV0Uvgp+il<br />
+JD9RjxWFNmzjnOlLWqThnyK9kyUc9FGGlnq4FMYX34ZGR3ngCqaYlf/Yy54PuUZB<br />
+iQXZHBH1LLJW//Ux0crfselKWvxfMN3UHZl6/ysECeLX5DCNRKCnb1Wqx/0UA6+n<br />
+79H/FSUG94Mf3YNvvrClMiQS17LbnQtmYICoFP/YO2dfc8ghNbLmcyc3XiTv1Puc<br />
+iy9OJhZTASeksVJrir6ZM+Vx8EjYkS7bKtneX+QqlK9E5p3eUshiX4UBgPk1q92w<br />
+DKytmy7QPd4egq1W6cJ9RZ5SioJC70vf1jXkWeiOS3Jjlz1wUybU/q0ybUP3QRim<br />
+0qKwZNk7AAMFCACMwwFEMt56Sm9lAXWrjTKQcyR4ASJr//gJW2Yyc3rCSCSGppTS<br />
+tAgFEaFMca/i3Wyv35cKQy/DejPQfcitaXmmgBDqeX6z8VzPyEVu8I9lnZTWr2Y8<br />
+viqR6p4TSz2u5gSeMT6rNosrukMoehBh4I3eEXAs1pPwyFbJOepJCeMZwFiIZ469<br />
+guXywLRBYvpiAkt29W/q2ndbsRVxq1+PVlXP9HFatt70rTfOlVShkI6vCyWcCl2F<br />
+RlV7niCBkwSr8oH0hrt4GqvCzQtcGG1TrdeLuxBVVM+AACvVBEWxgk5b8yueK7jy<br />
+xAYgEiYDLDtbJysNUCQsV4G35wm1nkaK8/ixiEkEGBECAAkFAkidtoMCGwwACgkQ<br />
+gKRDIS7Nczrg5QCeNh2yio7SPI8TTZWbFCP6wUpjNvoAn3Bgbg7Y+hhzEe0r62Tp<br />
+egB6gGxq<br />
+=8/Ep<br />
+-----END PGP PUBLIC KEY BLOCK-----<br /></h3>
 </div></div>
 </body>
 </html>
