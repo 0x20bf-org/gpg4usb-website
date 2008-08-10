@@ -150,7 +150,7 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 <td width="150">
 
-<strong>Your Name</strong></td>
+Your Name</td>
 
 <td width="188">
 
@@ -161,7 +161,7 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 <td width="150">
 
-<strong>Your Mail-Adress</strong></td>
+Your Mail-Adress</td>
 
 <td width="188">
 
@@ -173,7 +173,7 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 <td width="150">
 
-<strong>Your Message</strong></td>
+Your Message</td>
 
 <td width="188">
 
@@ -187,7 +187,7 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 <td width="150">
 
-<strong>Spamprotection:<br /> How much is <?php echo $Zahl_1; ?> plus <?php echo $Zahl_2; ?>?</strong>
+Spamprotection:<br /> How much is <?php echo $Zahl_1; ?> plus <?php echo $Zahl_2; ?>?
 
 </td>
 
@@ -206,7 +206,7 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 <tr>
 <td>
 
-<strong>Possible Actions</strong>
+Possible Actions
 </td>
 <td>
 

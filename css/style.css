@@ -57,8 +57,7 @@ h3 {
 }
 
 a {color:#308196;text-decoration:none;}
-/*a:hover {background-color:#c8e3e3;color:#308196}
-a:visited {color:#F85252;}*/
+a:hover {text-decoration:underline;}
 
 #lightbox{
   background-color:#eee;
