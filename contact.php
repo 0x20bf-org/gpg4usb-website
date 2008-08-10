@@ -104,7 +104,7 @@ $name          = nl2br(stripslashes(htmlspecialchars($_POST['name'])));
 $IP            = getenv("REMOTE_ADDR");
 $absender      = preg_replace( "/[^a-z0-9 !?:;,.\/_\-=+@#$&\*\(\)]/im", "", $_POST['email'] );
 $absender      = preg_replace( "/(content-type:|bcc:|cc:|to:|from:)/im", "", $absender );
-$nachricht     = nl2br(stripslashes(htmlspecialchars($_POST['message'])));
+$nachricht     = stripslashes(htmlspecialchars($_POST['message']));
 
 // ...die Nachricht, die Sie erhalten moechten, wenn eine neue Nachricht an Sie versandt wurde, definieren...
 
