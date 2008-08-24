@@ -39,6 +39,10 @@
   margin-left: 15em;
 }
 
+#content li {
+  text-align:left;
+}
+
 p {
   text-align:justify;
 }
