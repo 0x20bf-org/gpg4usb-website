@@ -35,7 +35,7 @@
 
 #content {
   font-family: arial, helvetica, sans-serif;
-  font-size: 1em;  
+  font-size: 1em;
   margin-left: 15em;
 }
 
@@ -60,6 +60,10 @@ h3 {
   font-weight:normal;
 }
 
+h4 {
+  font-size:0.95em;
+}
+
 a {color:#308196;text-decoration:none;}
 a:hover {text-decoration:underline;}
 
@@ -80,3 +84,12 @@ a:hover {text-decoration:underline;}
 #overlay img{ border: none; }
 
 #overlay{ background-image: url(overlay.png); }
+
+.downloadTable { font-size: 0.95em; }
+.downloadTable th { 
+    border-bottom: 1px solid #000; 
+    border-left: 2em solid #fff; 
+    border-right: 2em solid #fff;}
+.downloadTable td { padding:  0.1em 0.5em; text-align: left;}
+.downloadTable tr:hover td { background-color: #eef; }
+
