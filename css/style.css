@@ -93,3 +93,13 @@ a:hover {text-decoration:underline;}
 .downloadTable td { padding:  0.1em 0.5em; text-align: left;}
 .downloadTable tr:hover td { background-color: #eef; }
 
+.code {
+	font-family: monospace;
+}
+
+p.code {
+	border: 1px dashed;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: #eef;
+	}

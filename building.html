@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
+<head>
+<title>Develop</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+</head>
+
+<body>
+<div style="width:800px;text-align:center;float:center">
+<img src="img/logo4.jpg" style="width:800px;height:100px;border:1px;margin:15px" alt="gpg4usb" />
+<ul id="menu">
+<li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
+<li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
+<li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
+<li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
+<li class="active" onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
+<li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
+</ul>
+</div>
+
+<div id="content">
+<h1>Building gpg4usb</h1>
+
+<p>On this page we try to collect and document our findings on building static versions of gpg4usb for
+different operating systems. </p>
+
+<h2>General Notes</h2>
+<p>We provide static builds of gpg4usb to be independent of shared libraries. 
+To build the static application, a static-build version of the Qt-library, the gpgme-library and gpg itself are necessary.</p>
+
+<h2>Building on Linux</h2>
+<p> For static Building QT some information is <a href="http://doc.trolltech.com/qq/qq11-unix-deployment.html">here</a>.<br/>
+
+Download <a href="http://trolltech.com/developer/downloads/qt/x11">
+Qt/X11 Open Source Edition</a>:   
+<p class="code">wget http://get.qtsoftware.com/qt/source/qt-x11-opensource-src-4.5.2.tar.gz
+</p> Uncompress the file:
+<p class="code">tar xfzv qt-x11-opensource-src-4.5.2.tar.gz
+</p>
+ change to the directory
+<p class="code">cd qt-x11-opensource-src-4.5.2</p>
+We try to keep a minimum of dependencies on external libraries. Very important is the <em>-static</em> flag. Our configure command looks like this:
+<p class="code">./configure -no-xrandr -no-xinerama -no-glib -no-sm -no-webkit -qt-zlib -qt-libpng -no-qt3support -no-phonon -no-phonon-backend -no-gtkstyle -static -nomake examples -nomake demos -nomake docs -opensource -prefix ~/qt-x11-opensource-src-4.5.2
+</p>
+<p>NOTE: If you change configure options, remenber to run <span class="code">make confclean</span></p>
+run "make".<p class="code">make</p>
+</p>
+<p>
+To build gpg4usb with QT-built in, go to the source-directory and enter:</p>
+<p class="code">
+make clean<br/>
+PATH=~/src/qt-x11-opensource-src-4.5.2/bin:$PATH<br/>
+export PATH<br/>
+qmake -config release<br/>
+make
+</p>
+
+<h2>GPGME</h2>
+<p class="code">
+wget ftp://ftp.gnupg.org/gcrypt/libgpg-error/libgpg-error-1.7.tar.bz2<br/>
+tar xjvf libgpg-error-1.7.tar.bz2<br/>
+./configure --enable-static<br/>
+make && make install<br/>
+cd ..<br/>
+wget ftp://ftp.gnupg.org/gcrypt/gpgme/gpgme-1.2.0.tar.bz2<br/>
+tar xjvf gpgme-1.2.0.tar.bz2<br/>
+cd gpgme-1.2.0/</p>
+./configure --enable-static<br/>
+make && make install<br/>
+cd ..<br/>
+svn co http://cpunk.de/svn/src/gpg4usb/trunk<br/>
+cd trunk<br/>
+qmake<br/>
+make<br/>
+
+<p>In the release-dir there should now be a start_linux with ~10mb size. </p>
+<h4>Include other static libs</h4>
+<p>There is a subdir lib in the source-directory, we symlink other static libs here,
+like: /usr/lib/libpng.a or/usr/lib/gcc/i486-linux-gnu/4.2.3/libstdc++.a </p>
+<h4>Useful commands</h4>
+<p>To find out against which libs start_linux is linked dynamically, enter "ld start_linux". If you want to find
+out, which glibc-version is needed for running the app, enter " nm -g start_linux |grep GLIBC". You can use
+"strip start_linux" to reduce size.</p>
+<!--<h4>Notes on libc6-versions</h4>
+<p>In one case it worked to reduce a glibc-version dependency by unpacking some .o file from /usr/lib/libc.a and
+including them in the build. We're unsure if this is a good way to handle the dependencies, and are experimenting
+with other ways (building static app on systems with older libc).</p>
+-->
+<h2>On Windows</h2>
+<p>
+We didn't suceed in cross-compiling QT4 on linux for windows, so we use virtualbox with Windows XP for
+the windows-builds.<br/>
+
+</p>
+
+<h2>On Mac</h2>
+<p>
+not tried yet ;-)
+</p>
+
+<h2>Packaging</h2>
+<p>Some builds are <a href="http://upx.sourceforge.net/">upx-compressed</a>, we're still unsure if we should
+provide all builds in this form. To compress binaries with upx first install with apt-get install upx-nrv,
+and then enter "upx-nrv start_linux" or "upx-nrv start_windows.exe"</p>
+
+</div>
+</body>
+</html>
