@@ -33,6 +33,12 @@
   background-color: #308196;
 }
 
+#menu li.submenu {
+  margin: 0.1em 0.2em 0.1em 1.5em;
+  padding: 0.1em 0.4em;
+  text-align:right;
+}
+
 #content {
   font-family: arial, helvetica, sans-serif;
   font-size: 1em;

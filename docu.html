@@ -3,36 +3,41 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
 
 <head>
-<title>Develop</title>
+<title>News</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 </head>
 
 <body>
 <div style="width:800px;text-align:center;float:center">
+
 <img src="img/logo4.jpg" style="width:800px;height:100px;border:1px;margin:15px" alt="gpg4usb" />
+
 <ul id="menu">
 <li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
 <li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
 <li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
-<li onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
+<li class="active" onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
+	<li class="submenu" onclick="window.location.href='docu.html';"><a href="docu_keygen.html">Generating Keys</a></li>
+	<li class="submenu" onclick="window.location.href='docu.html';"><a href="docu_encrypt.html">Encrypting Text</a></li>
+	<li class="submenu" onclick="window.location.href='docu.html';"><a href="docu_decrypt.html">Decypting Text</a></li>
 <li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
-<li class="active" onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
+<li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
 <li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
 </ul>
 
 <div id="content">
-<h1>Develop</h1>
-<p>You are wellcome to help us in making things still better. If you want to know, what's planned for the 
-next steps in the development of gpg4usb, you should read our 
-<a href="http://cpunk.de/svn/src/gpg4usb/trunk/TODO">TODO-List</a> first.<br /><br />
- Second, you can download and work 
-with the sources of our application (see link below). If you have the time and actively want to 
-help for a longer period, please <a href="contact.php">ask for an account</a>.</p>
+<h1>Documentation</h1>
 
-<h1>SVN</h1>
-<p>Checkout source with svn co <a href="http://cpunk.de/svn/src/">http://cpunk.de/svn/src/</a></p>
+<p>Here you find some beginner guides to gpg4usb.</p>
 
-</div></div>
+<ul>
+	<li><a href="docu_keygen.html">Generating Keys</a></li>
+	<li><a href="docu_encrypt.html">Encrypting Text</a></li>
+	<li><a href="docu_decrypt.html">Decypting Text</a></li>
+</ul>
+
+</div>
+</div>
 </body>
 </html>
