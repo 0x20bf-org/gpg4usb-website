@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
 <head>
 <title>GPG4USB - Documentation</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
@@ -28,32 +27,50 @@
 <li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
 </ul>
 
+
 <div id="content">
 
-<h1>Howto encrypt a text</h1>
-<p>
-There are three steps for encrypting a text. We assume, that Alice wants to encrypt a text for Bobby.
-</p>
-<h4>STEP 1: Write the text</h4>
-<p>
-First Alice writes her text.
-</p>
-<IMG SRC="img/docu/encrypt_step1.jpg" alt="write the text">
+<h1>Howto decrypt a file</h1>
+<p><b>NOTE:</b> You can only decrypt files, if you have one private key, the file is encrypted for. You can identify the private keys by the "bunch of keys"-image in front of the name in the keylist (in this case Bobby):</p>
+<IMG SRC="img/docu/private_key_note.jpg" alt="private key hint">
 
-<h4>STEP 2: Choose key(s)</h4>
 <p>
-Secondly she chooses Bobbies key. 
-<b>NOTE:</b> You can also choose mutiple keys, so that the text is encrypted for more than one person. So e.g. you should always select your own key, so that you can encrypt your own texts later.
+There are five steps to decrypt a file. We assume, that Alice wants to decrypt a file, which is encrypted for her (that is, while encrytion her key was chosen).
 </p>
-<IMG SRC="img/docu/encrypt_step2.jpg" alt="choose the keys">
-
-
-<h4>STEP 3: Encrypt message</h4>
+<h4>STEP 1: Open file en-/decryption dialog </h4>
 <p>
-Finally Alice hits the encrypt button to encrypt the text. Alternatively she could use the shortcut Ctrl+E or use the menu crypto->encrypt 
+First Alice chooses the file cryption dialog in the menu. Alternatively, she could just hit the "File-Cryption"-button in the toolbar. 
 </p>
-<IMG SRC="img/docu/encrypt_step3.jpg" alt="encrypt the message">
+<IMG SRC="img/docu/cryptfile_menu.jpg" alt="open file cryption dialog">
 
+<h4>STEP 2: Choose decrypt</h4>
+<p>
+Secondly she chooses decrypt. 
+</p>
+<IMG SRC="img/docu/decryptfile_choose_decrypt.jpg" alt="choose decrypt">
+
+
+<h4>STEP 3: Choose input-/outputfile</h4>
+<p>
+Now she chooses the input- and outputfile. The inputfile has to be the encrypted file
+</p>
+<IMG SRC="img/docu/decryptfile_input_outputfile.jpg" alt="choose the input- and outputfile">
+
+<h4>STEP 4: Hit ok</h4>
+<p>
+Now she hits the ok-button
+</p>
+<IMG SRC="img/docu/decryptfile_hit_ok.jpg" alt="hit ok">
+
+<h4>STEP 5: Enter passphrase</h4>
+<p>
+Now she enters the passphrase of her key and hits the ok-button.
+</p>
+<IMG SRC="img/docu/decryptfile_password.jpg" alt="enter passphrase">
+<p>
+Afterwards the ok-message is displayed<p>
+</p>
+<IMG SRC="img/docu/decryptfile_okmessage.jpg" alt="ok message">
 
 </div>
 </div>

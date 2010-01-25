@@ -30,29 +30,45 @@
 
 <div id="content">
 
-<h1>Howto encrypt a text</h1>
+<h1>Howto encrypt a file</h1>
 <p>
-There are three steps for encrypting a text. We assume, that Alice wants to encrypt a text for Bobby.
+There are five steps to encrypt a file. We assume, that Bobby wants to encrypt a file for Alice and for himself (means, that he and Alice can decrypt the file, both of them with their own private key). So he has to have Alice's and his own public key.
 </p>
-<h4>STEP 1: Write the text</h4>
+<h4>STEP 1: Open file en-/decryption dialog </h4>
 <p>
-First Alice writes her text.
+First Bobby opens the file cryption dialog through the menu. Alternatively, she could just hit the "File-Cryption"-button in the toolbar.
 </p>
-<IMG SRC="img/docu/encrypt_step1.jpg" alt="write the text">
+<IMG SRC="img/docu/cryptfile_menu2.jpg" alt="open file-cryption dialog">
 
-<h4>STEP 2: Choose key(s)</h4>
+<h4>STEP 2: Choose encrypt</h4>
 <p>
-Secondly she chooses Bobbies key. 
-<b>NOTE:</b> You can also choose mutiple keys, so that the text is encrypted for more than one person. So e.g. you should always select your own key, so that you can encrypt your own texts later.
+Secondly he chooses encrypt. 
 </p>
-<IMG SRC="img/docu/encrypt_step2.jpg" alt="choose the keys">
+<IMG SRC="img/docu/encryptfile_choose_encrypt.jpg" alt="choose encrypt">
 
 
-<h4>STEP 3: Encrypt message</h4>
+<h4>STEP 3: Choose input-/outputfile</h4>
 <p>
-Finally Alice hits the encrypt button to encrypt the text. Alternatively she could use the shortcut Ctrl+E or use the menu crypto->encrypt 
+Now he chooses the input- and outputfile. When he chooses the inputfile, the same name with an appended .asc is made as suggestion for the output-file.
 </p>
-<IMG SRC="img/docu/encrypt_step3.jpg" alt="encrypt the message">
+<IMG SRC="img/docu/encryptfile_choose_input_outputfile.jpg" alt="choose input- and outputfile">
+
+<h4>STEP 4: Choose the keys</h4>
+<p>
+Now he chooses the users' keys, the file should be encrypted for. Be aware, that he also has to choose his own key, if he wants to be able to decrypt the file afterwards.
+</p>
+<IMG SRC="img/docu/encryptfile_choose_keys.jpg" alt="choose keys">
+
+<h4>STEP 5: Hit ok</h4>
+<p>
+Now he hits the ok-button
+</p>
+<IMG SRC="img/docu/encryptfile_hit_ok.jpg" alt="hit ok button">
+
+
+<p>After this the ok-message is displayed.
+</p>
+<IMG SRC="img/docu/decryptfile_okmessage.jpg" alt="ok-message">
 
 
 </div>
