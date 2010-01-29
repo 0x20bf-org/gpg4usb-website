@@ -32,48 +32,37 @@
 
 <div id="content">
 
-<h1>Howto decrypt a text</h1>
-<p><b>NOTE:</b> You can only decrypt files, if you have one private key, the file is encrypted for. You can identify the private keys by the "bunch of keys"-image in front of the name in the keylist (in this case Bobby):</p>
-<IMG SRC="img/docu/private_key_note.jpg" alt="private key hint">
-
+<h1>Howto export public keys</h1>
 <p>
-There are five steps for encrypting a text. We assume, that Bobby wants to decrypt a text, which is encrypted with his public key.
+There are three respectively four steps for exporting public keys. We assume, that Bobby wants to export Alice's and his key to give it to Charly, so that he can encrypt messages and files to them.
 </p>
-<h4>STEP 1: Copy the text to the textedit-field</h4>
+<h4>STEP 1: Open the key management</h4>
 <p>
-First Bobby copies the text to the textedit-field.
+First Bobby opens the key management through the toolbar. 
 </p>
+<IMG SRC="img/docu/exportkey_open_keymgmt.jpg" alt="open key management">
 
-<IMG SRC="img/docu/decrypt_step1.jpg" alt="copy to textedit-field">
-
-<h4>STEP 2: Choose key(s)</h4>
+<h4>STEP 2: Choose keys</h4>
 <p>
-Secondly he chooses his own key. 
+Secondly he checks Alice's and his own key. 
 </p>
-<IMG SRC="img/docu/decrypt_step2.jpg" alt="choose key">
+<IMG SRC="img/docu/exportkey_choose_keys.jpg" alt="choose the keys">
 
 
-<h4>STEP 3: Decrypt message</h4>
+<h4>STEP 3: Choose export key</h4>
 <p>
-Now Bobby hits the decrypt button to decrypt the text. Alternatively he could use the shortcut Ctrl+D or use the menu crypto->decrypt.<br/>
-<b>NOTE:</b> You can only decrypt texts, for which you have the private key. The private keys are those, with the key-icon in front of the Name in the keylist.
+Now he browses through the menu key -> export to file (respectively key -> export to clipboard). If he chooses to export the files to clipboard, he's finished now. Otherwise the next step follows. Alternatively he can choose the export through the toolbar.
 </p>
-<IMG SRC="img/docu/decrypt_step3.jpg" alt="decrypt message">
+<IMG SRC="img/docu/exportkey_menu_selection.jpg" alt="choose export to file">
 
-<h4>STEP 4: Enter passphrase</h4>
+<h4>STEP 4: Select the file</h4>
 <p>
-Now Bobby enters the passphrase of his key.
+Now he chooses the file to store the keys to.
 </p>
-<IMG SRC="img/docu/decrypt_step4.jpg" alt="enter passphrase">
-
-
-<h4>STEP 5: Read the text</h4>
+<IMG SRC="img/docu/exportkey_file_selection.jpg" alt="choose file">
 <p>
-Now Bobby can read the encrypted text.
+<b>NOTE:</b> To give your public key to someone else, you also can append the key to the text in the editor-field through the context menu in the keylist.
 </p>
-<IMG SRC="img/docu/decrypt_step5.jpg" alt="read encrypted text">
-
-
 </div>
 </div>
 </body>
