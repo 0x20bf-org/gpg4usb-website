@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+
 <head>
 <title>GPG4USB - Documentation</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
@@ -30,50 +31,41 @@
 <li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
 </ul>
 
-
 <div id="content">
 
-<h1>Howto decrypt a file</h1>
-<p><b>NOTE:</b> You can only decrypt files, if you have one private key, the file is encrypted for. You can identify the private keys by the "bunch of keys"-image in front of the name in the keylist (in this case Bobby):</p>
-<IMG SRC="img/docu/private_key_note.jpg" alt="private key hint">
+<h1>Howto export a private key</h1>
+<p>
+There are five simple steps for exporting a private keys. We assume, that Bobby wants to export his private key to save it to disk and put it in an fireproofed tresor.<br/>
+<b>NOTE:</b> You should really be carely with your private key, because everyone, who has this key, can encrypt all messages and texts encrypted for this key.
 
-<p>
-There are five steps to decrypt a file. We assume, that Alice wants to decrypt a file, which is encrypted for her (that is, while encrytion her key was chosen).
 </p>
-<h4>STEP 1: Open file en-/decryption dialog </h4>
+<h4>STEP 1: Open the key management</h4>
 <p>
-First Alice chooses the file cryption dialog in the menu. Alternatively, she could just hit the "File-Cryption"-button in the toolbar. 
+First Bobby opens the key management through the toolbar. 
 </p>
-<IMG SRC="img/docu/cryptfile_menu.jpg" alt="open file cryption dialog">
+<IMG SRC="img/docu/exportkey_open_keymgmt.jpg" alt="open key management">
 
-<h4>STEP 2: Choose decrypt</h4>
+<h4>STEP 2: Open key property dialog</h4>
 <p>
-Secondly she chooses decrypt. 
+Secondly he opens the key property dialog of his key through the context menu. 
 </p>
-<IMG SRC="img/docu/decryptfile_choose_decrypt.jpg" alt="choose decrypt">
+<IMG SRC="img/docu/exportkey_show_keydetails.jpg" alt="select show key details">
 
 
-<h4>STEP 3: Choose input-/outputfile</h4>
+<h4>STEP 3: Hit the "export private key"-button</h4>
 <p>
-Now she chooses the input- and outputfile. The inputfile has to be the encrypted file
-</p>
-<IMG SRC="img/docu/decryptfile_input_outputfile.jpg" alt="choose the input- and outputfile">
+Now he hits the "export private key"-button</p>
+<IMG SRC="img/docu/exportkey_hit_export_private_key.jpg" alt="hit the export private key button">
 
-<h4>STEP 4: Hit ok</h4>
+<h4>STEP 4: Confirm warn message</h4>
 <p>
-Now she hits the ok-button
+Now he confirms the warn message.
 </p>
-<IMG SRC="img/docu/decryptfile_hit_ok.jpg" alt="hit ok">
-
-<h4>STEP 5: Enter passphrase</h4>
+<IMG SRC="img/docu/exportkey_warn_message.jpg" alt="confirm warn message">
+<h4>STEP 5: Choose file</h4>
 <p>
-Now she enters the passphrase of her key and hits the ok-button.
+Finally he chooses a file, where he wants to save the key.
 </p>
-<IMG SRC="img/docu/decryptfile_password.jpg" alt="enter passphrase">
-<p>
-Afterwards the ok-message is displayed<p>
-</p>
-<IMG SRC="img/docu/decryptfile_okmessage.jpg" alt="ok message">
 
 </div>
 </div>

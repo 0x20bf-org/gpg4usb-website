@@ -109,3 +109,11 @@ p.code {
 	padding: 0.5em;
 	background-color: #eef;
 	}
+
+.newsentry {
+	background: #eef;
+	/*padding: 0.2em;*/
+	margin: 0.5em 0em;
+	padding: 0 0.5em;
+	border: 1px dotted #000;
+}

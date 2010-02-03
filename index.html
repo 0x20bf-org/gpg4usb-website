@@ -36,26 +36,54 @@ If you want to give it a try, please visit our <a href="download.html">download-
 unzip it onto your usb-pendrive... et voilà: you're done and ready to go!</p>
 
 <h1>News</h1>
+<div class="newsentry">
+<p><strong>03/02/2010:</strong> Encodings, charsets and Шифрование: We rounded up a new release, 
+  repaired bugs dealing with non ascii encodings and also bring you a new translation. Thanks to Kirill 
+  you are now able to use gpg4usb with a russian interface. Furthermore you are now able to view key-properties and export private keys.<br/>
+  </p><p>
+  Added features in version 0.2.2:</p>
+<ul>
+	<li>Added key-property-dialog in key management</li>
+	<li>Added export of private key</li>
+	<li>Added russian translation</li>
+	<li>Added warn message for key deletion</li>
+</ul>
+<p>Additionally the following bugs were fixed in version 0.2.2:</p>
+<ul>
+    <li>Fixed the keydb not found error, when umlauts, cyrillic and other special characters are in the pathname.</li>
+    <li>Set minimum keysize to 768 Bit (required by gnupg for el-gamal subkey)</li>
+    <li>Keysize-Bug fixed. Now when generating a key, the key has correct size<br/>
+    <b>NOTE:</b> When you created a key with an earlier version of gpg4usb, you should be aware, that it may only has a keysize of 1024 Bit. You can check this with the key-property dialog.</li>
+</ul>
+<p>Many thanks to the bugreporters. Special thanks go to Kirill for russian translation and lots of testing on russian Windows.</p>
+</div>
+
+<div class="newsentry">
 <p><strong>14/01/2010:</strong> Another bugfix-release. Changed in version 0.2.1:</p>
 <ul>
     <li>UTF-8 en-/decryption works (solving text encoding problems e.g. in cyrillic)</li>
     <li>Bug in file encryption on Windows resolved</li>
 </ul>
 <p>Many thanks to the bugreporters. Special thanks go to Fabian for fixing the fileencryption bug.</p>
+</div>
 
+<div class="newsentry">
 <p><strong>08/10/2009:</strong> gpg4usb, your portable application for gpg encryption is still alive! Version 0.2 is out, featuring:</p>
 <ul><li>Keymanagement</li><li>Key-Generation</li><li>File encryption/decryption</li></ul>
 <p>
 and lots of bug fixes and smaller improvements. <a href="download.html">Download now!</a>
 </p>
+</div>
 
+<div class="newsentry">
 <p><strong>17/12/2008:</strong> We realized that as a side effect of building linux version with glibc &lt; 2.4, gpg4usb also
 runs on 2.4 kernels, as used in small linux-distris, like <a href="http://damnsmalllinux.org/">damn-small-linux</a>.
 We only had to include a new built gpg-binary for linux. Get the new version from the 
 <a href="download.html">download section</a>. Windows executable inlcuded as always.
-
 </p>
+</div>
 
+<div class="newsentry">
 <p><strong>15/12/2008:</strong> A new release! gpg4usb v.0.1.1 is out, a release with minor modifications from our stable 
 branch. Get it from our <a href="download.html">download section</a>. New in this version:</p> 
 <ul> 
@@ -64,16 +92,23 @@ branch. Get it from our <a href="download.html">download section</a>. New in thi
 <li>linux build now done on debian release from 2005 (sarge), so any newer linux distribution should 
 be supported (glibc &gt;= 2.3.2)</li>
 </ul>
+</div>
 
-
+<div class="newsentry">
 <p><strong>23/08/2008:</strong> After a hint from Yucca from the
   <a href="http://portablefreeware.com/forums/viewtopic.php?p=13563#13563">portablefreeware forum</a>
   we also provide a <a href="http://upx.sourceforge.net/">upx-packed</a> build, which brings the size of
   the unzipped program down to 9mb. Its available from our <a href="download.html">download section</a>.
 </p>
+</div>
 
+<div class="newsentry">
 <p><strong>12/08/2008:</strong> Updated zipfile, 2 more libs added in linux-version, that may be missing on some systems - <a href="download.html">Download</a></p>
+</div>
+
+<div class="newsentry">
 <p><strong>10/08/2008:</strong> Initial Release v0.1</p>
+</div>
 
 </div>
 </div>
