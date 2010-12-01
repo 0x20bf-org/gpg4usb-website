@@ -4,11 +4,11 @@
 
 <head>
 <title>gpgusb-project - news</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="author" content="gpgusb-team">
-<meta name="keywords" content="gpgusb, gnupg, gpg, encryption, decryption, portable, usb">
-<meta name="description" content="gpg4usb is a very easy to use and small portable editor to encrypt and decrypt any text-message or -file you want.">
-<meta name="robots" content="follow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="gpgusb-team" />
+<meta name="keywords" content="gpgusb, gnupg, gpg, encryption, decryption, portable, usb" />
+<meta name="description" content="gpg4usb is a very easy to use and small portable editor to encrypt and decrypt any text-message or -file you want." />
+<meta name="robots" content="follow" />
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 </head>
@@ -37,12 +37,53 @@ on any computer out there, no matter if Microsoft Windows<font size="-3"><sup>(T
 Therefore it's usage is self-describing, and the user-interface as simple as possible.<br /><br />
 gpg4usb is <a href="http://www.gnu.org/copyleft/copyleft.html">free software</a>, and it is licensed under the
 <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License (GPL)</a>. <br /><br />
-If you want to give it a try, please visit our <a href="download.html">download-section</a>, get the files and
+If you want to give it a try, please get our latest release <a href="gpg4usb-0.2.5.zip">here</a> or visit our <a href="download.html">download-section</a>, get the files and
 unzip it onto your usb-pendrive... et voilà: you're done and ready to go!</p>
 
 <h1>News</h1>
+<!--div class="newsentry">
+<p><strong>12/01/2010:</strong></p>
+<p>On our homepage we added a documentation howto translate gpg4usb.</p>
+</div-->
+
 <div class="newsentry">
-<p><strong>19/06/2010:</strong> Summer, sun and new release. Within not quite a month we present you the result of newest polishing and bug-fixing. Viriato showed up and was so kind to provide a spanish translation. Many thanks to him and the other translators for updating the translation files.
+<p><strong>12/01/2010:</strong> 0.2.5 is out! We proudly present
+you a shiny new settings dialog. Its now possible to remember password for
+a session and messages encoded "quoted printable" are decoded now. 
+Viriato was so kind to send us an italian translation.
+The still experimental "decode PGP/MIME" feature allows to open attachments with the 
+responsible application. Also we fixed some long outstanding bugs and updated 
+gpg-binaries to the latest version. 
+Take a look at the <a href="screenshots.html">screenshots</a> or proceed directly to
+the <a href="download.html">download page</a>.</p>
+
+<p>Many thanks to our translators for the smooth and quick translation process short before release again. You are great!</p>
+<p>New features in version 0.2.5:</p>
+<ul>
+<li>Tabbed settings dialog</li>
+<li>Redo action in edit menu</li>
+<li>Optional "remember password" function</li>
+<li>Italian translation</li>
+<li>Decoding "quoted printable" works now</li>
+<li>PGP/MIME attachments provide "open with external application" now. 
+PGP/MIME support still considered experimental.</li>
+</ul>
+<p>The following bugfixes/changes were made in version 0.2.5:</p>
+<ul>
+<li>Ask before overwriting existing files in file encryption</li>
+<li>Syncronize checked keys between file encryption dialog and mainwindow.</li>
+<li>Fix crashing on decrypting twice.</li>
+<li>Update GPG binaries to 1.4.11</li>
+<li>Update the Linux Qt library to 4.7</li>
+<li>Static linux build is now done on debian etch, this means libc => 2.3.6 supported.</li>
+</ul>
+</div>
+
+
+<div class="newsentry">
+<p><strong>19/06/2010:</strong> Summer, sun and new release. Within not quite a month we present you 
+the result of newest polishing and bug-fixing. Viriato showed up and was so kind to provide a spanish 
+translation. Many thanks to him and the other translators for updating the translation files.</p>
 
 <p>Added features in version 0.2.4:</p>
 <ul>
@@ -59,13 +100,18 @@ unzip it onto your usb-pendrive... et voilà: you're done and ready to go!</p>
 	<li>Statically build with Qt 4.5 on Debian Sarge again, so it should run on rather old Linux-Distris</li>
 	<li>From now on the download files are <a href="http://upx.sourceforge.net/">upx-compressed</a> by default</li>
 </ul>
-<p>Furthermore we started the implementation of PGP-MIME-parsing. This implementation is rather incomplete. We're not sure, if it's working under all circumstances. Also we're not yet satisfied with the GUI, so we marked it experimental in the settings dialog. If this warning is not keeping you away from testing, and you find errors or non-working PGP-MIME encoded messages, don't hesitate to report.</div>
+<p>Furthermore we started the implementation of PGP-MIME-parsing. This implementation is rather incomplete.
+We're not sure, if it's working under all circumstances. Also we're not yet satisfied with the GUI, 
+so we marked it experimental in the settings dialog. If this warning is not keeping you away from testing, 
+and you find errors or non-working PGP-MIME encoded messages, don't hesitate to report.
+</p>
+</div>
 
 
 <div class="newsentry">
 <p><strong>02/05/2010:</strong> Settings, Qt 4.5 and Português do Brasil: We added a settings dialog, fixed 
   a bug in file encryption and added Brazilian translation (many thanks to Alessandro for this). Furthermore 
-  we updated to Qt 4.5.</p 
+  we updated to Qt 4.5.</p> 
 <p>Added features in version 0.2.3:</p>
 <ul>
         <li>Added settings dialog</li>
