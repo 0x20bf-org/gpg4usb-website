@@ -38,10 +38,14 @@ $Zahl_2 = intval(rand(1, 10));
 </ul>
 
 <div id="content">
-<h1>Contact</h1>
-<p>If you have questions regarding this Project, contact us via email at <br/>
-gpg4usb [AT] cpunk.de<br /> or meet us via jabber in our channel <br />gpg4usb@conference.jabber.ccc.de<br /><br />  
-To simplify things up, you can just use this form to send us a message:</p> 
+<h2>Mailing List</h2>
+<p>Our mailing list is hosted at <a href="http://lists.gzehn.de/mailman/listinfo/gpg4usb" >http://lists.gzehn.de/mailman/listinfo/gpg4usb</a>.</p>
+
+<h2>Jabber</h2>
+<p>You can meet us in our jabber channel <em>gpg4usb@conference.jabber.ccc.de</em></p>
+
+<h2>Email</h2>
+<p>You can also send a mail to <em>gpg4usb [AT] cpunk.de</em> or use this form to send us a message:</p>
 
 <?php
 
