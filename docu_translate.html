@@ -35,6 +35,23 @@
 <div id="content">
 
 <h1>Howto translate gpg4usb</h1>
+
+<div class="newsentry">
+<h4>Quick guide to translation</h4>
+<ol>
+<li>Download and install <a href="http://qt-apps.org/content/show.php/Qt+Linguist+Download?content=89360"> Qt linguist</a></li>
+<li>Open gpg4usb translation file in your prefered language, e.g. ts/gpg4usb_en.ts</li>
+<li>try translating one string, e.g. "&Open" from GPGWin.cpp</li>
+<li>hit File->Release</li>
+<li>start gpg4usb and look at the result</li>
+</ol>
+<p>Now go wild translating and send us the ts-file. We will include it in our next release. 
+We will contact you to update translations when new ones are needed, and you'll see how nice linguist
+behaves to only ask you for the changed strings to be translated. We are looking forward to working together
+on delivering gpg4usb in your language.
+</p>
+</div>
+
 <p>
 To integrate a new language into gpg4usb, one of the developers has to do one simple step and then the translater can begin his work.
 For the translator, the most simple way is to use the Qt-Linguist. The developer has to install lupdate and lrelease. In Linux these are contained in the <b>qt4-dev</b> package. Some detailed documentation on the linguist is available <a href="http://doc.qt.nokia.com/4.6/linguist-manual.html">here</a>.
