@@ -117,7 +117,7 @@ $mailnachricht = "Hallo!\n\nEs ist eine neue Nachricht fuer Sie eingetroffen:\n\
 
 // ...an Sie verschicken...
 
-mail("bugs@cpunk.de", "Eine neue Nachricht fuer Sie!", $mailnachricht, "From: $name <$absender>");
+mail("gpg4usb@cpunk.de", "Eine neue Nachricht fuer Sie!", $mailnachricht, "From: $name <$absender>");
 
 // ...und dem Benutzer sagen, dass alles glatt lief!
 
