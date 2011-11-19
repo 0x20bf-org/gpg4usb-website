@@ -25,8 +25,11 @@ $Zahl_2 = intval(rand(1, 10));
 </head>
 
 <body>
+<div id="logo">
+<a href="index.html"><img src="img/weblogo.png" alt="gpg4usb project" /></a>
+</div>
+
 <div style="width:800px;text-align:center;float:center">
-<a href="index.html"><img src="img/weblogo.png" style="margin: 0 0 0 50px" alt="gpg4usb project" /></a>
 <ul id="menu">
 <li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
 <li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>

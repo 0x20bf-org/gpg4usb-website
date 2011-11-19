@@ -5,7 +5,7 @@
   background-color: #fff;
   padding: 2.2em 0.5em;
   width: 10em;
-  margin-left: 3.15em;
+  margin-left: 0.2em;
   text-align:center;
   height: 30em;
 }
@@ -44,11 +44,15 @@
 #content {
   font-family: arial, helvetica, sans-serif;
   font-size: 1em;
-  margin-left: 15em;
+  margin-left: 12em;
 }
 
 #content li {
   text-align:left;
+}
+
+#logo {
+  margin-left: 0.7em;
 }
 
 p {
