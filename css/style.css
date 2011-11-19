@@ -20,7 +20,7 @@
 }
 
 #menu li:hover {
-  background-color: #7187a9;
+  background-color: #b9c4d5;
 }
 
 #menu a {
@@ -31,7 +31,7 @@
 }
 
 #menu li.active {
-  background-color: #355584;
+  background-color: #7b90af;
 }
 
 #menu li.submenu {
