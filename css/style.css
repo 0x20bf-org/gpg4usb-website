@@ -1,25 +1,26 @@
 #menu {
   list-style-type: none;
   float: left;
-  border: 1px solid #ddd;
+  border-right: 1px dotted #aaa;
   background-color: #fff;
   padding: 0.5em;
   width: 10em;
   margin-left: 3em;
   text-align:center;
+  height: 100em;
 }
 
 #menu li {
-  margin: 0.5em 0.2em 0.5em 0.2em;
+  margin: 0.2em 0.2em 0.2em 0.2em;
   padding: 0.2em;
-  border-top: 1px dotted;
-  border-bottom: 1px dotted;
-  background-color: #bccece;
+  /*border-top: 1px dotted;
+  border-bottom: 1px dotted;*/
+  background-color: #d9dfe8;
   cursor: pointer;
 }
 
 #menu li:hover {
-  background-color: #c8e3e3;
+  background-color: #7187a9;
 }
 
 #menu a {
@@ -30,7 +31,7 @@
 }
 
 #menu li.active {
-  background-color: #308196;
+  background-color: #355584;
 }
 
 #menu li.submenu {
@@ -70,7 +71,7 @@ h4 {
   font-size:0.95em;
 }
 
-a {color:#308196;text-decoration:none;}
+a {color:#355584; text-decoration:none;}
 a:hover {text-decoration:underline;}
 
 #lightbox{
@@ -107,11 +108,11 @@ p.code {
 	border: 1px dashed;
 	margin: 0.5em;
 	padding: 0.5em;
-	background-color: #eef;
+	background-color: #d9dfe8;
 	}
 
 .newsentry {
-	background: #eef;
+	background: #d9dfe8;
 	/*padding: 0.2em;*/
 	margin: 0.5em 0em;
 	padding: 0 0.5em;
