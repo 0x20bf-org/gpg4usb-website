@@ -71,7 +71,7 @@ h4 {
   font-size:0.95em;
 }
 
-a {color:#355584; text-decoration:none;}
+a {color:#214478; text-decoration:none;}
 a:hover {text-decoration:underline;}
 
 #lightbox{
@@ -112,10 +112,10 @@ p.code {
 	}
 
 .newsentry {
-	background: #d9dfe8;
+	background: #f2f4f7;
 	/*padding: 0.2em;*/
 	margin: 0.5em 0em;
 	padding: 0 0.5em;
-	border: 1px dotted #000;
+	border: 1px dotted #aaa;
 }
 
