@@ -117,10 +117,11 @@ p.code {
 	}
 
 .newsentry {
-	background: #f2f4f7;
+	/* background: #f2f4f7; */
 	/*padding: 0.2em;*/
 	margin: 0.5em 0em;
 	padding: 0 0.5em;
 	border: 1px dotted #aaa;
+	background-color: #d9dfe8;
 }
 
