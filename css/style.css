@@ -3,15 +3,15 @@
   float: left;
   border-right: 1px dotted #aaa;
   background-color: #fff;
-  padding: 0.5em;
+  padding: 2.2em 0.5em;
   width: 10em;
-  margin-left: 3em;
+  margin-left: 3.15em;
   text-align:center;
   height: 30em;
 }
 
 #menu li {
-  margin: 0.2em 0.2em 0.2em 0.2em;
+  margin: 0.3em 0.2em;
   padding: 0.2em;
   /*border-top: 1px dotted;
   border-bottom: 1px dotted;*/
