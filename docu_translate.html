@@ -41,12 +41,18 @@
 <div class="newsentry">
 <h4>Quick guide to translation</h4>
 <ol>
-<li>Download and install <a href="http://sourceforge.net/projects/gns-3/files/GNS3/Translations/Qt%20Linguist%20for%20Windows.zip/download"> Qt Linguist</a></li>
+<li>Download and install  Qt Linguist</a>
+  <ul>
+    <li><a href="http://sourceforge.net/projects/gns-3/files/GNS3/Translations/Qt%20Linguist%20for%20Windows.zip/download">for windows</a></li>
+    <li>or with "apt-get install qt4-linguist-tools" on linux</li>
+  </ul>
+</li>
 <li>Open gpg4usb translation file from the gpg4usb folder in your preferred language, e.g. ts/gpg4usb_en.ts</li>
-<li>translate the 
-<li>try translating one string, e.g. "&Open" from GpgWin.cpp</li>
+<li>Choose "SettingsDialog" from the left Panel and insert your languages name as translation for the bottom "English" String</li>
+<li>Do a "File->SaveAs" and save as your locale e.g. ts/gpg4usb_ml.ts (where ml is MyLocale fill in YOUR locale ;-) )</li>
+<li>try translating another string, e.g. "&Open" from GpgWin.cpp</li>
 <li>hit File->Release</li>
-<li>start gpg4usb and look at the result</li>
+<li>start gpg4usb and look into "Edit->Settingsdialog", your language should now be selectable.</li>
 </ol>
 <p>Now go wild translating and send us the ts-file. We will include it in our next release. 
 We will contact you to update translations when new ones are needed. You will also experience how nice linguist
