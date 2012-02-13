@@ -20,26 +20,21 @@
 <li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
 <li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
 <li class="active" onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
-	<li class="submenu" onclick="window.location.href='docu_keygen.html';"><a href="docu_keygen.html">Generate Keys</a></li>
-	<li class="submenu" onclick="window.location.href='docu_encrypt.html';"><a href="docu_encrypt.html">Encrypt Text</a></li>
-	<li class="submenu" onclick="window.location.href='docu_decrypt.html';"><a href="docu_decrypt.html">Decrypt Text</a></li>
-	<li class="submenu" onclick="window.location.href='docu_encrypt_file.html';"><a href="docu_encrypt_file.html">Encrypt Files</a></li>
-	<li class="submenu" onclick="window.location.href='docu_decrypt_file.html';"><a href="docu_decrypt_file.html">Decrypt Files</a></li>
-	<li class="submenu" onclick="window.location.href='docu_import_key.html';"><a href="docu_import_key.html">Import Keys</a></li>
-	<li class="submenu" onclick="window.location.href='docu_export_key.html';"><a href="docu_export_key.html">Export Public Keys</a></li>
-	<li class="active submenu" onclick="window.location.href='docu_export_key_private.html';"><a href="docu_export_key_private.html">Export Private Keys</a></li>
-	<li class="submenu" onclick="window.location.href='docu_translate.html';"><a href="docu_translate.html">Translate gpg4usb</a></li>
 <li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
 <li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
 <li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
 </ul>
+
+<div style="width:800px;text-align:center;float:center">
+Previous: <a href="docu_export_key.html">Export a public key</a> 
+<hr/>
 
 <div id="content">
 
 <h1>Howto export a private key</h1>
 <p>
 There are five simple steps for exporting a private keys. We assume, that Bobby wants to export his private key to save it to disk and put it in an fireproofed tresor.<br/>
-<b>NOTE:</b> You should really be carely with your private key, because everyone, who has this key, can encrypt all messages and texts encrypted for this key.
+<b>NOTE:</b> You should really be careful with your private key, because everyone, who has this key, can encrypt all messages and texts encrypted for this key, if he also has your keys passphrase.
 
 </p>
 <h4>STEP 1: Open the key management</h4>
@@ -47,7 +42,7 @@ There are five simple steps for exporting a private keys. We assume, that Bobby 
 First Bobby opens the key management through the toolbar. 
 </p>
 <p>
-<IMG SRC="img/docu/exportkey_open_keymgmt.jpg" alt="open key management">
+<IMG SRC="img/docu/exportkey_open_keymgmt.jpg" alt="open key management"/>
 </p>
 
 <h4>STEP 2: Open key property dialog</h4>
@@ -55,14 +50,15 @@ First Bobby opens the key management through the toolbar.
 Secondly he opens the key property dialog of his key through the context menu. 
 </p>
 <p>
-<IMG SRC="img/docu/exportkey_show_keydetails.jpg" alt="select show key details">
+<IMG SRC="img/docu/exportkey_show_keydetails.jpg" alt="select show key details"/>
 </p>
 
 
 <h4>STEP 3: Hit the "export private key"-button</h4>
 <p>
 Now he hits the "export private key"-button</p>
-<IMG SRC="img/docu/exportkey_hit_export_private_key.jpg" alt="hit the export private key button">
+<p>
+<IMG SRC="img/docu/exportkey_hit_export_private_key.jpg" alt="hit the export private key button"/>
 </p>
 
 <h4>STEP 4: Confirm warn message</h4>
@@ -70,13 +66,15 @@ Now he hits the "export private key"-button</p>
 Now he confirms the warn message.
 </p>
 <p>
-<IMG SRC="img/docu/exportkey_warn_message.jpg" alt="confirm warn message">
+<IMG SRC="img/docu/exportkey_warn_message.jpg" alt="confirm warn message"/>
 </p>
 <h4>STEP 5: Choose file</h4>
 <p>
 Finally he chooses a file, where he wants to save the key.
 </p>
 
+<hr/>
+Previous: <a href="docu_export_key.html">Export a public key</a> 
 </div>
 </div>
 </body>
