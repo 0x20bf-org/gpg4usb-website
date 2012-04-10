@@ -38,11 +38,62 @@ on any computer out there, no matter if Microsoft Windows<font size="-3"><sup>(T
 Therefore it's usage is self-describing, and the user-interface as simple as possible.<br /><br />
 gpg4usb is <a href="http://www.gnu.org/copyleft/copyleft.html">free software</a>, and it is licensed under the
 <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License (GPL)</a>. <br /><br />
-If you want to give it a try, please get our latest release <a href="gpg4usb-0.3.1.1.zip">here</a> 
+If you want to give it a try, please get our latest release <a href="gpg4usb-0.3.2.zip">here</a> 
 or visit our <a href="download.html">download section</a>, get the files and
 unzip it onto your usb-pendrive... et voilà: you're done and ready to go!</p>
 
 <h1>News</h1>
+<div class="newsentry">
+	<p><strong>2012-04-08:</strong> Although gpg4usb 0.3.2 has a wizard, it did not arise magically out of nothing. 
+	We put some work in a first start wizard, an offline help system and did bug fixing as usual (same procedure as every release).</p>
+	<p>Our translators worked hard on bringing your localized versions. 0.3.2 comes with nine languages, 
+	the latest localisation is Arabic which was done by Ahmad (cheerio to him).</p>
+	<p style="text-align:right"><img src="img/gpg4usb-0.3.2-arabic.jpg" alt="gpg4usb arabic translation" /></p>
+<p>Unfortunately we had to remove italian localisation, since it wasn't updated since 0.2.5 and is really outdated now. 
+If someone likes to step in, the italian language files are still available. Since we didn't receive updated 
+Vietnamese and Burmese translations yet, these are still like version 0.3.1, so the new features are not translated.</p>
+
+<p>New features:</p>
+<ul>
+	<li>First start wizard with posibility to 
+	<ul>
+		<li>create new key</li>
+		<li>import config and keys from old version</li>
+		<li>import from locally installed GnuPG</li>
+	</ul>
+	</li>
+	
+	<li>Integrated offline help system</li>
+	<li>Dialog with result of key import</li>
+	<li>Key details dialog more user friendly</li>
+	<li>Zoomable text area</li>
+	<li>File operation toolbar</li>
+	<li>Added Arabian translation</li>
+</ul>
+
+<p>Minor changes:</p>
+<ul>
+	<li>Build with Qt 4.8</li>
+	<li>Strike out revoked keys in keylist and add warning to keydetails dialog</li>
+	<li>Change default iconsize to 24x24</li>
+	<li>Show selection for keyring files in import dialog</li>
+	<li>Understandable message if no private key found for decryption</li>
+	<li>Add button to copy fingerprint in key detail dialog and remove whitespaces on copy</li>
+	<li>Automatically restart gpg4usb on language change</li>
+	<li>Change file encryption to single dialogs for en- and decryption</li>
+	<li>Disable tab related actions when no tab is shown</li>
+</ul>
+
+<p>Bugfixes:</p>
+<ul>
+	<li>Fix crash on canceling password dialog on Windows</li>
+	<li>Clear password cache after signing, if password remember isn't enabled</li>
+	<li>Handle uft8 encoding correctly for keys</li>
+	<li>Fix random crash when searching key on key server</li>
+</ul>
+
+</div>
+
 <div class="newsentry">
 	<p><strong>2012-03-09:</strong>
 	Chinese translation is integrated in the <a href="download.html">0.3.1.1 zip file</a>. 
