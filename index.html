@@ -49,15 +49,20 @@ unzip it onto your usb-pendrive... et voilà: you're done and ready to go!</p>
 	personal computers (252 cores) in 148.2 days <a href="http://www.fujitsu.com/global/news/pr/archives/month/2012/20120618-01.html">
 	[link]</a>.</p> 
 	<p>
-	So we finally put out a release which generates saver keys by default. Also it was suggested to us that keys should expire by
+	So we finally put out a release which generates safer keys by default. Also it was suggested to us that keys should expire by
 	default, as they may get closer to beeing breakable with time. So we now set a default expiration date of 5 years. You could still
 	change this setting yourself.</p>
 
-<p>Changes: In key creation we changed the following</p>
+<p>Changes: </p>
 <ul>
-	<li>Set keytype to RSA instead of DSA/El-Gamal</li>
-	<li>Set expiration to five years by default</li>
-	<li>Set minimum keysize to 1024 bit</li>
+  <li>Updated included gpg binary to version 1.4.12</li>
+  <li>In key creation we changed the following
+    <ul>
+	    <li>Set keytype to RSA instead of DSA/El-Gamal</li>
+	    <li>Set expiration to five years by default</li>
+	    <li>Set minimum keysize to 1024 bit</li>
+	  </ul>
+	</li>
 </ul>
 
 <p>Bugfixes:</p>
