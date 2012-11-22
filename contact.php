@@ -1,18 +1,21 @@
+<?php session_start(); ?>
+
 <?php
+
 // Wenn alle Felder ausgefuellt wurden und der Captcha stimmt, wird ein Cookie gesetzt
 if($_GET['action'] != "" && !empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']) && ereg ("^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-z]([-.]?[0-9a-z])*\\.[a-z]{2,3}$", $_POST['email']))
 
-{
+// {
 
-setcookie("spam_protection", "spam_protection", time()+500);
+// setcookie("spam_protection", "spam_protection", time()+500);
 
-}
+// }
 
 // Erstellen einer Rechenaufgabe
 
-$Zahl_1 = intval(rand(1, 10));
+// $Zahl_1 = intval(rand(1, 10));
 
-$Zahl_2 = intval(rand(1, 10));
+// $Zahl_2 = intval(rand(23, 42));
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -37,7 +40,7 @@ $Zahl_2 = intval(rand(1, 10));
 <li onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
 <li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
 <li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
-<li class="active" onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
+<li class="active" onclick="window.location.href='contact.php';"><a href="http://gpg4usb.cpunk.de/contact.php">Contact</a></li>
 </ul>
 
 <div id="content">
@@ -55,33 +58,38 @@ To keep spam level low, sending message is only for subscribers. The
 
 <?php
 
+include_once $_SERVER['DOCUMENT_ROOT'] . '/securimage/securimage.php';
+	$securimage = new Securimage();
+
 // Wenn das Formular gesendet werden soll...
 
 if($_GET['action'] == "send")
 
-{
+// {
 
 // ...der Cookie gegen Spam nicht gesetzt ist...
 
-if($_COOKIE["spam_protection"] != "spam_protection")
+// if($_COOKIE["spam_protection"] != "spam_protection")
 
-{
+// {
 
 // ... und die Rechenaufgabe FALSCH geloest wurde...
 
-if($_POST['number'] != md5($_POST['arithmetic']))
+// if($_POST['number'] != md5($_POST['arithmetic']))
 
-{
+// {
 
 // ...dann eine Fehlermeldung ausgeben!
 
-echo "<p><font style=\"color:#0000;font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>You didn't solve the arithmetical task correctly!</b></font></p>";
+// echo "<p><font style=\"color:#0000;font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>You didn't solve the arithmetical task correctly!</b></font></p>";
 
-}
+//}
 
 // Ansonsten, wenn die Rechenaufgabe RICHTIG geloest wurde stimmt...
 
-if($_POST['number'] == md5($_POST['arithmetic']))
+// if($_POST['number'] == md5($_POST['arithmetic']))
+
+
 
 {
 
@@ -97,6 +105,8 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 }
 
+
+
 // Ansonsten, wenn die eingegebene E-Mail Adresse auch wirklich eine ist...
 
 if(ereg ("^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-z]([-.]?[0-9a-z])*\\.[a-z]{2,3}$", $_POST['email']))
@@ -108,6 +118,16 @@ if(ereg ("^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-z]([-.]?[0-9a-z])*\\.[a-z]{2,3}
 if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
 
 {
+
+if ($securimage->check($_POST['captcha_code']) == false) {
+	  // the code was incorrect
+	  // you should handle the error so that the form processor doesn't continue
+	 
+	  // or you can use the following code if there is no validation or you do not know how
+	  echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>The security code entered was incorrect.</p>";
+	  echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Please go <a href='javascript:history.go(-1)'>back</a> and try again.</p>";
+	  exit;
+}
 
 // dann den ganzen Muell von Spambots oder auch menschlichen Spammern entfernen...
 
@@ -128,7 +148,8 @@ mail("gpg4usb@cpunk.de", "Eine neue Nachricht fuer Sie!", $mailnachricht, "From:
 // ...und dem Benutzer sagen, dass alles glatt lief!
 
 echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Thanks for your message!</b></font></p>";
-
+echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Go <a href='javascript:history.go(-1)'>back</a>.</p>";
+exit;
 }
 
 // Wenn nicht alle Felder ausgefuellt wurden, dann...
@@ -147,48 +168,48 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 }
 
-}
+// }
 
-}
+// }
 
 ?>
 
 <form id="form" name="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?action=send">
 
-<table width="400" cellpadding="2" cellspacing="2" style="background-color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:12px">
+<table width="500" cellpadding="2" cellspacing="2" style="background-color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:12px">
 
 <tr>
 
-<td width="150">
+<td width="200">
 
 Your Name</td>
 
-<td width="188">
+<td width="250">
 
-<input name="name" type="text" id="name" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px" value="<?php echo $_POST['name']; ?>"/></td>
+<input name="name" type="text" id="name" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px" value="<?php echo $_POST['name']; ?>"/></td>
 
 </tr>
 <tr>
 
-<td width="150">
+<td width="200">
 
 Your Mail-Adress</td>
 
-<td width="188">
+<td width="250">
 
-<input name="email" type="text" id="email" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px" value="<?php echo $_POST['email']; ?>"/></td>
+<input name="email" type="text" id="email" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px" value="<?php echo $_POST['email']; ?>"/></td>
 
 </tr>
 
 <tr>
 
-<td width="150">
+<td width="200">
 
 Your Message</td>
 
-<td width="188">
+<td width="250">
 
-<textarea name="message" id="message" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px; height:100px" rows="4" cols="15"><?php echo $_POST['message']; ?></textarea></td>
+<textarea name="message" id="message" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px; height:250px" rows="4" cols="15"><?php echo $_POST['message']; ?></textarea></td>
 
 </td>
 
@@ -196,21 +217,33 @@ Your Message</td>
 
 <tr>
 
-<td width="150">
+<td style="text-align:left;">
 
-Spamprotection:<br /> How much is <?php echo $Zahl_1; ?> plus <?php echo $Zahl_2; ?>?
+<img id="captcha" src="/securimage/securimage_show.php" alt="CAPTCHA Image" style="border: 1px solid #000000;" />
+<object type="application/x-shockwave-flash" data="/securimage/securimage_play.swf?audio_file=/securimage/securimage_play.php&amp;bgColor1=#fff&amp;bgColor2=#fff&amp;iconColor=#000&amp;borderWidth=1&amp;borderColor=#000" width="35" height="35" >
+	 
+	  <param name="movie" value="/securimage/securimage_play.swf?audio_file=/securimage/securimage_play.php&amp;bgColor1=#fff&amp;bgColor2=#fff&amp;iconColor=#777&amp;borderWidth=1&amp;borderColor=#000" />
+	 
+</object>
+<!-- Spamprotection:<br /> How much is <?php echo $Zahl_1; ?> plus <?php echo $Zahl_2; ?>? -->
+
+</td>
+
+<td width="250">
+<p style="text-align:left;">Enter the text you see in the image on the left:<br /><br />
+<input type="text" name="captcha_code" size="10" maxlength="6" style="background-color:#CCCCCC; font-size:12px;  border: 1px solid #000000;" />
+<a href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
+
+
+</p>
+
+<!-- <input name="number" type="hidden" id="number"  value="<?php echo md5(( $Zahl_1 + $Zahl_2 )); ?>"/>
+
+<input name="arithmetic" type="text" id="arithmetic" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px" onfocus="if(this.value=='put the sum in here...')this.value=''" onblur="if(this.value=='')this.value='put the sum in here...'" value="put the sum in here..."/> -->
 
 </td>
 
 <td>
-
-<input name="number" type="hidden" id="number"  value="<?php echo md5(( $Zahl_1 + $Zahl_2 )); ?>"/>
-
-<input name="arithmetic" type="text" id="arithmetic" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px" onfocus="if(this.value=='put the sum in here...')this.value=''" onblur="if(this.value=='')this.value='put the sum in here...'" value="put the sum in here..."/>
-
-</td>
-
-<td align="center" valign="middle">
 
 </td>
 </tr>
@@ -219,10 +252,10 @@ Spamprotection:<br /> How much is <?php echo $Zahl_1; ?> plus <?php echo $Zahl_2
 
 Possible Actions
 </td>
-<td>
+<td style="text-align:left;">
 
 
-<?php
+<!-- <?php
 
 // Wenn KEIN Cookie gegen Spam gesetzt wurde, dann soll der "Senden"-Button anklickbar sein
 
@@ -230,11 +263,11 @@ if($_COOKIE["spam_protection"] != "spam_protection")
 
 {
 
-?>
+?> -->
 
 <input name="submit" type="submit" id="submit" value="submit" /> <input name="reset" type="reset" id="reset" value="reset" />
 
-<?php
+<!-- <?php
 
 }
 
@@ -244,22 +277,22 @@ if($_COOKIE["spam_protection"] == "spam_protection")
 
 {
 
-?>
-
+?> -->
+<!-- 
 <input name="submit" type="submit" id="submit" value="submit" disabled="true" /> <input name="reset" type="reset" id="reset" value="reset" />
 
 <?php
 
 }
-?>
+?> -->
 
 </td>
 </tr>
 </table>
 </form>
 <br /><br />
-<h2>Our gpg-key:</h2>
-<h3>-----BEGIN PGP PUBLIC KEY BLOCK-----<br />
+<h2>Our gpg-key</h2>
+<p>-----BEGIN PGP PUBLIC KEY BLOCK-----<br />
 Version: GnuPG v1.4.9 (GNU/Linux)<br />
 <br />
 mQGiBEidtoMRBACxTEK5fYugdih9OhO2B3J4v860xVxcaXoveXgykqglNbBXT0+5<br />
@@ -288,7 +321,7 @@ xAYgEiYDLDtbJysNUCQsV4G35wm1nkaK8/ixiEkEGBECAAkFAkidtoMCGwwACgkQ<br />
 gKRDIS7Nczrg5QCeNh2yio7SPI8TTZWbFCP6wUpjNvoAn3Bgbg7Y+hhzEe0r62Tp<br />
 egB6gGxq<br />
 =8/Ep<br />
------END PGP PUBLIC KEY BLOCK-----<br /></h3>
+-----END PGP PUBLIC KEY BLOCK-----<br /></p>
 </div></div>
 </body>
 </html>
