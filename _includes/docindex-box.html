@@ -1,0 +1,38 @@
+<div class="rightbox">
+<div class="box_title">Documentation</div>
+<div class="box_content">
+
+<!-- TODO: get <em></em> for active link in with jekyll -->
+
+   <p><a href="docu_concepts.html" title="Concepts of GPG">Concepts of GPG</a></p>
+	<p><a href="docu_keygen.html" title="Generating A Key">Generating A Key</a></p>
+	<p><a href="docu_encrypt.html" title="Encrypting Text">Encrypting Text</a></p>
+	<p><a href="docu_decrypt.html" title="Decrypting Text">Decrypting Text</a></p>
+	<p><a href="docu_sign.html" title="Sign Text">Sign Text</a></p>
+	<p><a href="docu_verify.html" title="Verify Text">Verify Text</a></p>
+	<p><a href="docu_encrypt_file.html" title="Encrypting A File">Encrypting A File</a></p>
+	<p><a href="docu_decrypt_file.html" title="Decrypting A File">Decrypting A File</a></p>
+	<p><a href="docu_import_key.html" title="Importing Keys">Importing Keys</a></p>
+	<p><a href="docu_export_key.html" title="Exporting Public Keys">Exporting Public Keys</a></p>
+	<p><a href="docu_export_key_private.html" title="Exporting Private Keys">Exporting Private Keys</a></p>
+
+<!--
+	this has all title in small letters, and i have no idea about getting the correct order in
+	
+	{% for a_page in site.pages %}
+			{% if a_page.docindex-box %}
+			<p>
+				<a href=".{{a_page.url}}" title="a_page.title">
+					{% if a_page.title == page.title %}<em>{% endif %}
+					{{a_page.title}}
+					{% if a_page.title == page.title %}</em>{% endif %}
+				</a>
+			</p>
+			{% endif %}
+	{% endfor %}
+-->
+
+</div>
+</div>
+<div style="clear:right;">&nbsp;</div>
+

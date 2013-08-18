@@ -1,0 +1,4 @@
+# look at http://jekyllrb.com/docs/configuration/
+# 
+source:      .
+destination: ./_site

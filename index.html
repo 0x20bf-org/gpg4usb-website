@@ -1,41 +1,12 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<title>gpg4usb - project</title>
-<meta name="generator" content="Bluefish 2.2.3" >
-<meta name="author" content="sigi" >
-<meta name="date" content="2013-03-04T18:13:02+0100" >
-<meta name="keywords" content="gpg,gnupg,pgp,gpg4usb,encryption,privacy">
-<meta name="description" content="gpg4usb is a very easy to use and small portable editor to encrypt and decrypt any text-message or -file you want.">
-<meta name="ROBOTS" content="INDEX, FOLLOW">
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
-<meta http-equiv="content-style-type" content="text/css">
-<meta http-equiv="expires" content="0">
+---
+layout: default
+title: home
+description: gpg4usb is a very easy to use and small portable editor to encrypt and decrypt any text-message or -file you want.
+shortnews: true
+download-button: true
+screenshot-box: true
+---
 
-
-<link href="style.css" type="text/css" rel="stylesheet" media="screen" lang="EN">
-
-</head>
-
-<body style="background-image:url(./pics/bg_line.gif); background-repeat:repeat;">
-
-<div id="logo"><a href="./index.html"><img src="pics/gpg4usb-logo.png" width="205" height="91" alt="gpg4usb-logo"></a></div>
-
-<div id="banner">
-<div id="menu">
-<ul>
-<li><a href="./about.html" title="About gpg4usb">About</a></li>
-<li><a href="./docu.html" title="Documentation">Documentation</li>
-<li><a href="./development.html" title="Development">Development</a></li>
-<li><a href="./contact.php" title="Contact">Contact</a></li>
-</ul>
-</div>
-</div>
-
-<div id="container">
-<div style="clear:both;">&nbsp;</div>
-<div id="content">
 <h1>Welcome to the gpg4usb project</h1>
 <p>gpg4usb is a very easy to use and small portable editor to encrypt and decrypt any text-message 
 or -file you want.</p>
@@ -45,71 +16,4 @@ usage is self-describing, and the user-interface as simple as possible.</p>
 <p>gpg4usb is free software, and it is licensed under the GNU General Public License (GPL).</p>
 <p>If you want to give it a try, please get our latest release here or visit our download section, 
 get the files and unzip it onto your usb-pendrive... et voilà: you're done and ready to go!</p>
-</div>
-<div style="clear:none;">&nbsp;</div>
-<div class="rightbox">
-<div class="box_title">Download</div>
-<div class="box_content">
-<div id="download" style="height:70px;">
-<p><a class="item1" href="gpg4usb-0.3.2-1.zip" title="Download Newest Version"></a></p>
-</div>
-<p style="text-align:center;"><a href="download.html" title="Annotations and previous versions">Annotations and previous versions</a></p>
-</div>
-</div>
-<div style="clear:right;">&nbsp;</div>
 
-<div class="rightbox">
-<div class="box_title">Screenshots</div>
-<div class="box_content"><p><a href="screenshots.html" title="Screenshots"><img src="./pics/preview_gpg4usb_250.png" alt="Preview gpg4usb 2.5"></a></p>
-</div>
-</div>
-<div style="clear:left;">&nbsp;</div>
-
-
-
-
-<div class="middlebox">
-<div class="box_title">Latest News - 2012-09-10</div>
-<div class="box_content"><p>We received some hints that the default key generation settings are not sufficient anymore.
-	Gpg4usb was still generating DSA/El-Gamal Keys. Here is a press report of an experiment breaking a 932bit El-Gamal Crypto Key with 21
-	personal computers (252 cores) in 148.2 days <a href="http://www.fujitsu.com/global/news/pr/archives/month/2012/20120618-01.html" title="Fujitsu: Breaking El-Gamal Crypto Key">
-	[link]</a>.</p> 
-	<p>
-	So we finally put out a release which generates safer keys by default. Also it was suggested to us that keys should expire by
-	default, as they may get closer to beeing breakable with time. So we now set a default expiration date of 5 years. You could still
-	change this setting yourself.</p>
-
-<p>Changes: </p>
-<ul>
-  <li>Updated included gpg binary to version 1.4.12</li>
-  <li>In key creation we changed the following
-    <ul>
-	    <li>Set keytype to RSA instead of DSA/El-Gamal</li>
-	    <li>Set expiration to five years by default</li>
-	    <li>Set minimum keysize to 1024 bit</li>
-	  </ul>
-	</li>
-</ul>
-
-<p>Bugfixes:</p>
-<ul>
-	<li>Fix creation of empty Windows registry key on import from existing GnuPG</li>
-</ul>
-
-</div>  
-
-<p><a href="development.html#history" title="Development History"><b>Previous News</b></a></p>
-</div>
-
-<div style="clear:both;">&nbsp;</div>
-
-
-
-
-
-
-</div>
-
-<p>&nbsp;</p>
-</body>
-</html>
