@@ -1,36 +1,41 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<title>gpg4usb - Documentation</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<title>gpg4usb - project: howto encrypt a file</title>
+<meta name="generator" content="Bluefish 2.2.3" >
+<meta name="author" content="sigi" >
+<meta name="date" content="2013-03-04T17:54:20+0100" >
+<meta name="keywords" content="gpg,gnupg,pgp,gpg4usb,encryption,privacy">
+<meta name="description" content="There are five steps to encrypt a file. We assume, that Bobby wants to encrypt a file for Alice and for himself (means, that he and Alice can decrypt the file, both of them with their own private key). So he has to have Alice's and his own public key.">
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+
+<link href="style.css" type="text/css" rel="stylesheet" media="screen" lang="EN">
+
 </head>
 
-<body>
-<div id="logo">
-<a href="index.html"><img src="img/weblogo.png" alt="gpg4usb project" /></a>
+<body style="background-image:url(./pics/bg_line.gif); background-repeat:repeat;">
+
+<div id="logo"><a href="./index.html"><img src="pics/gpg4usb-logo.png" width="205" height="91" alt="gpg4usb-logo"></a></div>
+
+<div id="banner">
+<div id="menu">
+<ul>
+<li><a href="./about.html" title="About gpg4usb">About</a></li>
+<li><a href="./docu.html" title="Documentation">Documentation</li>
+<li><a href="./development.html" title="Development">Development</a></li>
+<li><a href="./contact.php" title="Contact">Contact</a></li>
+</ul>
+</div>
 </div>
 
-<div style="width:800px;text-align:center;float:center">
-
-<ul id="menu">
-<li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
-<li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
-<li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
-<li class="active" onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
-<li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
-<li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
-<li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
-</ul>
-
-<div style="width:800px;text-align:center;float:center">
-Previous: <a href="docu_verify.html">Verify a message</a> | Next: <a href="docu_decrypt_file.html">Decrypt a file</a> 
-<hr/>
-
+<div id="container">
+<div style="clear:both;">&nbsp;</div>
 <div id="content">
-
 <h1>Howto encrypt a file</h1>
 <p>
 There are five steps to encrypt a file. We assume, that Bobby wants to encrypt a file for Alice and for himself (means, that he and Alice can decrypt the file, both of them with their own private key). So he has to have Alice's and his own public key.
@@ -40,7 +45,7 @@ There are five steps to encrypt a file. We assume, that Bobby wants to encrypt a
 First Bobby opens the file cryption dialog through the menu. Alternatively, she could just hit the "File-Cryption"-button in the toolbar.
 </p>
 <p>
-<IMG SRC="img/docu/cryptfile_menu2.jpg" alt="open file-cryption dialog"/>
+<img src="./pics/docu/cryptfile_menu2.jpg" alt="open file-cryption dialog" width="540px;"/>
 </p>
 
 <h4>STEP 2: Choose encrypt</h4>
@@ -48,7 +53,7 @@ First Bobby opens the file cryption dialog through the menu. Alternatively, she 
 Secondly he chooses encrypt. 
 </p>
 <p>
-<IMG SRC="img/docu/encryptfile_choose_encrypt.jpg" alt="choose encrypt"/>
+<img src="./pics/docu/encryptfile_choose_encrypt.jpg" alt="choose encrypt" width="540px;"/>
 </p>
 
 
@@ -57,7 +62,7 @@ Secondly he chooses encrypt.
 Now he chooses the input- and outputfile. When he chooses the inputfile, the same name with an appended .asc is made as suggestion for the output-file.
 </p>
 <p>
-<IMG SRC="img/docu/encryptfile_choose_input_outputfile.jpg" alt="choose input- and outputfile"/>
+<img src="./pics/docu/encryptfile_choose_input_outputfile.jpg" alt="choose input- and outputfile" width="540px;"/>
 </p>
 
 <h4>STEP 4: Choose the keys</h4>
@@ -65,7 +70,7 @@ Now he chooses the input- and outputfile. When he chooses the inputfile, the sam
 Now he chooses the users' keys, the file should be encrypted for. Be aware, that he also has to choose his own key, if he wants to be able to decrypt the file afterwards.
 </p>
 <p>
-<IMG SRC="img/docu/encryptfile_choose_keys.jpg" alt="choose keys"/>
+<img src="./pics/docu/encryptfile_choose_keys.jpg" alt="choose keys" width="540px;"/>
 </p>
 
 <h4>STEP 5: Hit ok</h4>
@@ -73,20 +78,42 @@ Now he chooses the users' keys, the file should be encrypted for. Be aware, that
 Now he hits the ok-button
 </p>
 <p>
-<IMG SRC="img/docu/encryptfile_hit_ok.jpg" alt="hit ok button"/>
+<img src="./pics/docu/encryptfile_hit_ok.jpg" alt="hit ok button" width="540px;"/>
 </p>
 
 
 <p>After this the ok-message is displayed.
 </p>
 <p>
-<IMG SRC="img/docu/decryptfile_okmessage.jpg" alt="ok-message"/>
+<img src="./pics/docu/decryptfile_okmessage.jpg" alt="ok-message" />
 </p>
+</div>
 
+<div style="clear:none;">&nbsp;</div>
+<div class="rightbox">
+<div class="box_title">Documentation</div>
+<div class="box_content">
 
-<hr/>
-Previous: <a href="docu_verify.html">Verify a message</a> | Next: <a href="docu_decrypt_file.html">Decrypt a file</a> 
+   <p><a href="docu_concepts.html" title="Concepts of GPG">Concepts of GPG</a></p>
+	<p><a href="docu_keygen.html" title="Generating A Key">Generating A Key</a></p>
+	<p><a href="docu_encrypt.html" title="Encrypting Text">Encrypting Text</a></p>
+	<p><a href="docu_decrypt.html" title="Decrypting Text">Decrypting Text</a></p>
+	<p><a href="docu_sign.html" title="Sign Text">Sign Text</a></p>
+	<p><a href="docu_verify.html" title="Verify Text">Verify Text</a></p>
+	<p><a href="docu_encrypt_file.html" title="Encrypting A File"><em>Encrypting A File</em></a></p>
+	<p><a href="docu_decrypt_file.html" title="Decrypting A File">Decrypting A File</a></p>
+	<p><a href="docu_import_key.html" title="Importing Keys">Importing Keys</a></p>
+	<p><a href="docu_export_key.html" title="Exporting Public Keys">Exporting Public Keys</a></p>
+	<p><a href="docu_export_key_private.html" title="Exporting Private Keys">Exporting Private Keys</a></p>
+
 </div>
 </div>
+<div style="clear:right;">&nbsp;</div>
+
+
+<div style="clear:left;">&nbsp;</div>
+
+</div>
+<p>&nbsp;</p>
 </body>
 </html>

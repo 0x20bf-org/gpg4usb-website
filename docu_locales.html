@@ -1,893 +1,924 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<title>gpg4usb - Documentation</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<title>gpg4usb - project: documentation</title>
+<meta name="generator" content="Bluefish 2.2.3" >
+<meta name="author" content="sigi" >
+<meta name="date" content="2013-03-04T23:16:36+0100" >
+<meta name="keywords" content="gpg,gnupg,pgp,gpg4usb,encryption,privacy">
+<meta name="description" content="learn how to use gpg4usb - create your private keys and encrypt messages and files.">
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+
+<link href="style.css" type="text/css" rel="stylesheet" media="screen" lang="EN">
+
 </head>
 
-<body>
+<body style="background-image:url(./pics/bg_line.gif); background-repeat:repeat;">
 
-<div style="width:800px;text-align:center;float:center">
+<div id="logo"><a href="./index.html"><img src="pics/gpg4usb-logo.png" width="205" height="91" alt="gpg4usb-logo"></a></div>
 
+<div id="banner">
+<div id="menu">
+<ul>
+<li><a href="./about.html" title="About gpg4usb">About</a></li>
+<li><a href="./docu.html" title="Documentation">Documentation</li>
+<li><a href="./development.html" title="Development">Development</a></li>
+<li><a href="./contact.php" title="Contact">Contact</a></li>
+</ul>
+</div>
+</div>
 
+<div id="container">
+<div style="clear:both;">&nbsp;</div>
 <div id="content">
-<p><b>List of Locales :</b></p><br>
-<table border="0" cellpadding="3" cellspacing="0" bgcolor="#eef">
+<table border="0" cellpadding="3" cellspacing="0">
 
     <tr>
-      <td><code>Albanian (Albania)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Albanian (Albania)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>sq_AL<code></code></code></td>
+      <td>sq_AL</td>
     </tr>
     <tr>
-      <td><code>Albanian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sq<code></code></code></td>
+      <td>Albanian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sq</td>
     </tr>
 
     <tr>
-      <td><code>Arabic (Algeria)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_DZ<code></code></code></td>
+      <td>Arabic (Algeria)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_DZ</td>
     </tr>
     <tr>
-      <td><code>Arabic (Bahrain)</code></td>
+      <td>Arabic (Bahrain)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_BH<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_BH</td>
     </tr>
     <tr>
-      <td><code>Arabic (Egypt)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_EG<code></code></code></td>
+      <td>Arabic (Egypt)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_EG</td>
 
     </tr>
     <tr>
-      <td><code>Arabic (Iraq)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_IQ<code></code></code></td>
+      <td>Arabic (Iraq)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_IQ</td>
     </tr>
     <tr>
 
-      <td><code>Arabic (Jordan)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_JO<code></code></code></td>
+      <td>Arabic (Jordan)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_JO</td>
     </tr>
     <tr>
-      <td><code>Arabic (Kuwait)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Arabic (Kuwait)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>ar_KW<code></code></code></td>
+      <td>ar_KW</td>
     </tr>
     <tr>
-      <td><code>Arabic (Lebanon)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_LB<code></code></code></td>
+      <td>Arabic (Lebanon)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_LB</td>
     </tr>
 
     <tr>
-      <td><code>Arabic (Libya)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_LY<code></code></code></td>
+      <td>Arabic (Libya)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_LY</td>
     </tr>
     <tr>
-      <td><code>Arabic (Morocco)</code></td>
+      <td>Arabic (Morocco)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_MA<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_MA</td>
     </tr>
     <tr>
-      <td><code>Arabic (Oman)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_OM<code></code></code></td>
+      <td>Arabic (Oman)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_OM</td>
 
     </tr>
     <tr>
-      <td><code>Arabic (Qatar)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_QA<code></code></code></td>
+      <td>Arabic (Qatar)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_QA</td>
     </tr>
     <tr>
 
-      <td><code>Arabic (Saudi Arabia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_SA<code></code></code></td>
+      <td>Arabic (Saudi Arabia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_SA</td>
     </tr>
     <tr>
-      <td><code>Arabic (Sudan)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Arabic (Sudan)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>ar_SD<code></code></code></td>
+      <td>ar_SD</td>
     </tr>
     <tr>
-      <td><code>Arabic (Syria)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_SY<code></code></code></td>
+      <td>Arabic (Syria)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_SY</td>
     </tr>
 
     <tr>
-      <td><code>Arabic (Tunisia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_TN<code></code></code></td>
+      <td>Arabic (Tunisia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_TN</td>
     </tr>
     <tr>
-      <td><code>Arabic (United Arab Emirates)</code></td>
+      <td>Arabic (United Arab Emirates)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_AE<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_AE</td>
     </tr>
     <tr>
-      <td><code>Arabic (Yemen)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar_YE<code></code></code></td>
+      <td>Arabic (Yemen)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar_YE</td>
 
     </tr>
     <tr>
-      <td><code>Arabic</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ar<code></code></code></td>
+      <td>Arabic</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ar</td>
     </tr>
     <tr>
 
-      <td><code>Belarusian (Belarus)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>be_BY<code></code></code></td>
+      <td>Belarusian (Belarus)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>be_BY</td>
     </tr>
     <tr>
-      <td><code>Belarusian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Belarusian</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>be<code></code></code></td>
+      <td>be</td>
     </tr>
     <tr>
-      <td><code>Bulgarian (Bulgaria)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>bg_BG<code></code></code></td>
+      <td>Bulgarian (Bulgaria)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>bg_BG</td>
     </tr>
 
     <tr>
-      <td><code>Bulgarian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>bg<code></code></code></td>
+      <td>Bulgarian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>bg</td>
     </tr>
     <tr>
-      <td><code>Catalan (Spain)</code></td>
+      <td>Catalan (Spain)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ca_ES<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ca_ES</td>
     </tr>
     <tr>
-      <td><code>Catalan</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ca<code></code></code></td>
+      <td>Catalan</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ca</td>
 
     </tr>
     <tr>
-      <td><code>Chinese (China)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>zh_CN<code></code></code></td>
+      <td>Chinese (China)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>zh_CN</td>
     </tr>
     <tr>
 
-      <td><code>Chinese (Hong Kong)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>zh_HK<code></code></code></td>
+      <td>Chinese (Hong Kong)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>zh_HK</td>
     </tr>
     <tr>
-      <td><code>Chinese (Singapore)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Chinese (Singapore)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>zh_SG<code></code></code></td>
+      <td>zh_SG</td>
     </tr>
     <tr>
-      <td><code>Chinese (Taiwan)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>zh_TW<code></code></code></td>
+      <td>Chinese (Taiwan)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>zh_TW</td>
     </tr>
 
     <tr>
-      <td><code>Chinese</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>zh<code></code></code></td>
+      <td>Chinese</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>zh</td>
     </tr>
     <tr>
-      <td><code>Croatian (Croatia)</code></td>
+      <td>Croatian (Croatia)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>hr_HR<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>hr_HR</td>
     </tr>
     <tr>
-      <td><code>Croatian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>hr<code></code></code></td>
+      <td>Croatian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>hr</td>
 
     </tr>
     <tr>
-      <td><code>Czech (Czech Republic)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>cs_CZ<code></code></code></td>
+      <td>Czech (Czech Republic)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>cs_CZ</td>
     </tr>
     <tr>
 
-      <td><code>Czech</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>cs<code></code></code></td>
+      <td>Czech</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>cs</td>
     </tr>
     <tr>
-      <td><code>Danish (Denmark)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Danish (Denmark)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>da_DK<code></code></code></td>
+      <td>da_DK</td>
     </tr>
     <tr>
-      <td><code>Danish</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>da<code></code></code></td>
+      <td>Danish</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>da</td>
     </tr>
 
     <tr>
-      <td><code>Dutch (Belgium)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>nl_BE<code></code></code></td>
+      <td>Dutch (Belgium)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>nl_BE</td>
     </tr>
     <tr>
-      <td><code>Dutch (Netherlands)</code></td>
+      <td>Dutch (Netherlands)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>nl_NL<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>nl_NL</td>
     </tr>
     <tr>
-      <td><code>Dutch</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>nl<code></code></code></td>
+      <td>Dutch</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>nl</td>
 
     </tr>
     <tr>
-      <td><code>English (Australia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_AU<code></code></code></td>
+      <td>English (Australia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_AU</td>
     </tr>
     <tr>
 
-      <td><code>English (Canada)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_CA<code></code></code></td>
+      <td>English (Canada)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_CA</td>
     </tr>
     <tr>
-      <td><code>English (India)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>English (India)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>en_IN<code></code></code></td>
+      <td>en_IN</td>
     </tr>
     <tr>
-      <td><code>English (Ireland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_IE<code></code></code></td>
+      <td>English (Ireland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_IE</td>
     </tr>
 
     <tr>
-      <td><code>English (Malta)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_MT<code></code></code></td>
+      <td>English (Malta)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_MT</td>
     </tr>
     <tr>
-      <td><code>English (New Zealand)</code></td>
+      <td>English (New Zealand)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_NZ<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_NZ</td>
     </tr>
     <tr>
-      <td><code>English (Philippines)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_PH<code></code></code></td>
+      <td>English (Philippines)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_PH</td>
 
     </tr>
     <tr>
-      <td><code>English (Singapore)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_SG<code></code></code></td>
+      <td>English (Singapore)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_SG</td>
     </tr>
     <tr>
 
-      <td><code>English (South Africa)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_ZA<code></code></code></td>
+      <td>English (South Africa)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_ZA</td>
     </tr>
     <tr>
-      <td><code>English (United Kingdom)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>English (United Kingdom)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>en_GB<code></code></code></td>
+      <td>en_GB</td>
     </tr>
     <tr>
-      <td><code>English (United States)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en_US<code></code></code></td>
+      <td>English (United States)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en_US</td>
     </tr>
 
     <tr>
-      <td><code>English</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>en<code></code></code></td>
+      <td>English</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>en</td>
     </tr>
     <tr>
-      <td><code>Estonian (Estonia)</code></td>
+      <td>Estonian (Estonia)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>et_EE<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>et_EE</td>
     </tr>
     <tr>
-      <td><code>Estonian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>et<code></code></code></td>
+      <td>Estonian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>et</td>
 
     </tr>
     <tr>
-      <td><code>Finnish (Finland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fi_FI<code></code></code></td>
+      <td>Finnish (Finland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fi_FI</td>
     </tr>
     <tr>
 
-      <td><code>Finnish</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fi<code></code></code></td>
+      <td>Finnish</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fi</td>
     </tr>
     <tr>
-      <td><code>French (Belgium)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>French (Belgium)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>fr_BE<code></code></code></td>
+      <td>fr_BE</td>
     </tr>
     <tr>
-      <td><code>French (Canada)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fr_CA<code></code></code></td>
+      <td>French (Canada)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fr_CA</td>
     </tr>
 
     <tr>
-      <td><code>French (France)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fr_FR<code></code></code></td>
+      <td>French (France)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fr_FR</td>
     </tr>
     <tr>
-      <td><code>French (Luxembourg)</code></td>
+      <td>French (Luxembourg)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fr_LU<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fr_LU</td>
     </tr>
     <tr>
-      <td><code>French (Switzerland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fr_CH<code></code></code></td>
+      <td>French (Switzerland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fr_CH</td>
 
     </tr>
     <tr>
-      <td><code>French</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>fr<code></code></code></td>
+      <td>French</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>fr</td>
     </tr>
     <tr>
 
-      <td><code>German (Austria)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>de_AT<code></code></code></td>
+      <td>German (Austria)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>de_AT</td>
     </tr>
     <tr>
-      <td><code>German (Germany)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>German (Germany)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>de_DE<code></code></code></td>
+      <td>de_DE</td>
     </tr>
     <tr>
-      <td><code>German (Luxembourg)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>de_LU<code></code></code></td>
+      <td>German (Luxembourg)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>de_LU</td>
     </tr>
 
     <tr>
-      <td><code>German (Switzerland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>de_CH<code></code></code></td>
+      <td>German (Switzerland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>de_CH</td>
     </tr>
     <tr>
-      <td><code>German</code></td>
+      <td>German</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>de<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>de</td>
     </tr>
     <tr>
-      <td><code>Greek (Cyprus)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>el_CY<code></code></code></td>
+      <td>Greek (Cyprus)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>el_CY</td>
 
     </tr>
     <tr>
-      <td><code>Greek (Greece)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>el_GR<code></code></code></td>
+      <td>Greek (Greece)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>el_GR</td>
     </tr>
     <tr>
 
-      <td><code>Greek</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>el<code></code></code></td>
+      <td>Greek</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>el</td>
     </tr>
     <tr>
-      <td><code>Hebrew (Israel)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Hebrew (Israel)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>iw_IL<code></code></code></td>
+      <td>iw_IL</td>
     </tr>
     <tr>
-      <td><code>Hebrew</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>iw<code></code></code></td>
+      <td>Hebrew</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>iw</td>
     </tr>
 
     <tr>
-      <td><code>Hindi (India)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>hi_IN<code></code></code></td>
+      <td>Hindi (India)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>hi_IN</td>
     </tr>
     <tr>
-      <td><code>Hungarian (Hungary)</code></td>
+      <td>Hungarian (Hungary)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>hu_HU<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>hu_HU</td>
     </tr>
     <tr>
-      <td><code>Hungarian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>hu<code></code></code></td>
+      <td>Hungarian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>hu</td>
 
     </tr>
     <tr>
-      <td><code>Icelandic (Iceland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>is_IS<code></code></code></td>
+      <td>Icelandic (Iceland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>is_IS</td>
     </tr>
     <tr>
 
-      <td><code>Icelandic</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>is<code></code></code></td>
+      <td>Icelandic</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>is</td>
     </tr>
     <tr>
-      <td><code>Indonesian (Indonesia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Indonesian (Indonesia)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>in_ID<code></code></code></td>
+      <td>in_ID</td>
     </tr>
     <tr>
-      <td><code>Indonesian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>in<code></code></code></td>
+      <td>Indonesian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>in</td>
     </tr>
 
     <tr>
-      <td><code>Irish (Ireland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ga_IE<code></code></code></td>
+      <td>Irish (Ireland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ga_IE</td>
     </tr>
     <tr>
-      <td><code>Irish</code></td>
+      <td>Irish</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ga<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ga</td>
     </tr>
     <tr>
-      <td><code>Italian (Italy)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>it_IT<code></code></code></td>
+      <td>Italian (Italy)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>it_IT</td>
 
     </tr>
     <tr>
-      <td><code>Italian (Switzerland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>it_CH<code></code></code></td>
+      <td>Italian (Switzerland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>it_CH</td>
     </tr>
     <tr>
 
-      <td><code>Italian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>it<code></code></code></td>
+      <td>Italian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>it</td>
     </tr>
     <tr>
-      <td><code>Japanese (Japan)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Japanese (Japan)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>ja_JP<code></code></code></td>
+      <td>ja_JP</td>
     </tr>
     <tr>
-      <td><code>Japanese (Japan,JP)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ja_JP_JP<code></code></code></td>
+      <td>Japanese (Japan,JP)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ja_JP_JP</td>
     </tr>
 
     <tr>
-      <td><code>Japanese</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ja<code></code></code></td>
+      <td>Japanese</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ja</td>
     </tr>
     <tr>
-      <td><code>Korean (South Korea)</code></td>
+      <td>Korean (South Korea)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ko_KR<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ko_KR</td>
     </tr>
     <tr>
-      <td><code>Korean</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ko<code></code></code></td>
+      <td>Korean</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ko</td>
 
     </tr>
     <tr>
-      <td><code>Latvian (Latvia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>lv_LV<code></code></code></td>
+      <td>Latvian (Latvia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>lv_LV</td>
     </tr>
     <tr>
 
-      <td><code>Latvian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>lv<code></code></code></td>
+      <td>Latvian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>lv</td>
     </tr>
     <tr>
-      <td><code>Lithuanian (Lithuania)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Lithuanian (Lithuania)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>lt_LT<code></code></code></td>
+      <td>lt_LT</td>
     </tr>
     <tr>
-      <td><code>Lithuanian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>lt<code></code></code></td>
+      <td>Lithuanian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>lt</td>
     </tr>
 
     <tr>
-      <td><code>Macedonian (Macedonia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>mk_MK<code></code></code></td>
+      <td>Macedonian (Macedonia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>mk_MK</td>
     </tr>
     <tr>
-      <td><code>Macedonian</code></td>
+      <td>Macedonian</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>mk<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>mk</td>
     </tr>
     <tr>
-      <td><code>Malay (Malaysia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ms_MY<code></code></code></td>
+      <td>Malay (Malaysia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ms_MY</td>
 
     </tr>
     <tr>
-      <td><code>Malay</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ms<code></code></code></td>
+      <td>Malay</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ms</td>
     </tr>
     <tr>
 
-      <td><code>Maltese (Malta)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>mt_MT<code></code></code></td>
+      <td>Maltese (Malta)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>mt_MT</td>
     </tr>
     <tr>
-      <td><code>Maltese</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Maltese</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>mt<code></code></code></td>
+      <td>mt</td>
     </tr>
     <tr>
-      <td><code>Norwegian (Norway)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>no_NO<code></code></code></td>
+      <td>Norwegian (Norway)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>no_NO</td>
     </tr>
 
     <tr>
-      <td><code>Norwegian (Norway,Nynorsk)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>no_NO_NY<code></code></code></td>
+      <td>Norwegian (Norway,Nynorsk)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>no_NO_NY</td>
     </tr>
     <tr>
-      <td><code>Norwegian</code></td>
+      <td>Norwegian</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>no<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>no</td>
     </tr>
     <tr>
-      <td><code>Polish (Poland)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>pl_PL<code></code></code></td>
+      <td>Polish (Poland)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>pl_PL</td>
 
     </tr>
     <tr>
-      <td><code>Polish</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>pl<code></code></code></td>
+      <td>Polish</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>pl</td>
     </tr>
     <tr>
 
-      <td><code>Portuguese (Brazil)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>pt_BR<code></code></code></td>
+      <td>Portuguese (Brazil)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>pt_BR</td>
     </tr>
     <tr>
-      <td><code>Portuguese (Portugal)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Portuguese (Portugal)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>pt_PT<code></code></code></td>
+      <td>pt_PT</td>
     </tr>
     <tr>
-      <td><code>Portuguese</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>pt<code></code></code></td>
+      <td>Portuguese</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>pt</td>
     </tr>
 
     <tr>
-      <td><code>Romanian (Romania)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ro_RO<code></code></code></td>
+      <td>Romanian (Romania)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ro_RO</td>
     </tr>
     <tr>
-      <td><code>Romanian</code></td>
+      <td>Romanian</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ro<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ro</td>
     </tr>
     <tr>
-      <td><code>Russian (Russia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ru_RU<code></code></code></td>
+      <td>Russian (Russia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ru_RU</td>
 
     </tr>
     <tr>
-      <td><code>Russian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>ru<code></code></code></td>
+      <td>Russian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>ru</td>
     </tr>
     <tr>
 
-      <td><code>Serbian (Bosnia and Herzegovina)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sr_BA<code></code></code></td>
+      <td>Serbian (Bosnia and Herzegovina)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sr_BA</td>
     </tr>
     <tr>
-      <td><code>Serbian (Montenegro)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Serbian (Montenegro)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>sr_ME<code></code></code></td>
+      <td>sr_ME</td>
     </tr>
     <tr>
-      <td><code>Serbian (Serbia and Montenegro)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sr_CS<code></code></code></td>
+      <td>Serbian (Serbia and Montenegro)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sr_CS</td>
     </tr>
 
     <tr>
-      <td><code>Serbian (Serbia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sr_RS<code></code></code></td>
+      <td>Serbian (Serbia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sr_RS</td>
     </tr>
     <tr>
-      <td><code>Serbian</code></td>
+      <td>Serbian</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sr<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sr</td>
     </tr>
     <tr>
-      <td><code>Slovak (Slovakia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sk_SK<code></code></code></td>
+      <td>Slovak (Slovakia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sk_SK</td>
 
     </tr>
     <tr>
-      <td><code>Slovak</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sk<code></code></code></td>
+      <td>Slovak</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sk</td>
     </tr>
     <tr>
 
-      <td><code>Slovenian (Slovenia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sl_SI<code></code></code></td>
+      <td>Slovenian (Slovenia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sl_SI</td>
     </tr>
     <tr>
-      <td><code>Slovenian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Slovenian</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>sl<code></code></code></td>
+      <td>sl</td>
     </tr>
     <tr>
-      <td><code>Spanish (Argentina)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_AR<code></code></code></td>
+      <td>Spanish (Argentina)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_AR</td>
     </tr>
 
     <tr>
-      <td><code>Spanish (Bolivia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_BO<code></code></code></td>
+      <td>Spanish (Bolivia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_BO</td>
     </tr>
     <tr>
-      <td><code>Spanish (Chile)</code></td>
+      <td>Spanish (Chile)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_CL<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_CL</td>
     </tr>
     <tr>
-      <td><code>Spanish (Colombia)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_CO<code></code></code></td>
+      <td>Spanish (Colombia)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_CO</td>
 
     </tr>
     <tr>
-      <td><code>Spanish (Costa Rica)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_CR<code></code></code></td>
+      <td>Spanish (Costa Rica)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_CR</td>
     </tr>
     <tr>
 
-      <td><code>Spanish (Dominican Republic)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_DO<code></code></code></td>
+      <td>Spanish (Dominican Republic)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_DO</td>
     </tr>
     <tr>
-      <td><code>Spanish (Ecuador)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Spanish (Ecuador)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>es_EC<code></code></code></td>
+      <td>es_EC</td>
     </tr>
     <tr>
-      <td><code>Spanish (El Salvador)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_SV<code></code></code></td>
+      <td>Spanish (El Salvador)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_SV</td>
     </tr>
 
     <tr>
-      <td><code>Spanish (Guatemala)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_GT<code></code></code></td>
+      <td>Spanish (Guatemala)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_GT</td>
     </tr>
     <tr>
-      <td><code>Spanish (Honduras)</code></td>
+      <td>Spanish (Honduras)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_HN<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_HN</td>
     </tr>
     <tr>
-      <td><code>Spanish (Mexico)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_MX<code></code></code></td>
+      <td>Spanish (Mexico)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_MX</td>
 
     </tr>
     <tr>
-      <td><code>Spanish (Nicaragua)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_NI<code></code></code></td>
+      <td>Spanish (Nicaragua)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_NI</td>
     </tr>
     <tr>
 
-      <td><code>Spanish (Panama)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_PA<code></code></code></td>
+      <td>Spanish (Panama)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_PA</td>
     </tr>
     <tr>
-      <td><code>Spanish (Paraguay)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Spanish (Paraguay)</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>es_PY<code></code></code></td>
+      <td>es_PY</td>
     </tr>
     <tr>
-      <td><code>Spanish (Peru)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_PE<code></code></code></td>
+      <td>Spanish (Peru)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_PE</td>
     </tr>
 
     <tr>
-      <td><code>Spanish (Puerto Rico)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_PR<code></code></code></td>
+      <td>Spanish (Puerto Rico)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_PR</td>
     </tr>
     <tr>
-      <td><code>Spanish (Spain)</code></td>
+      <td>Spanish (Spain)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_ES<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_ES</td>
     </tr>
     <tr>
-      <td><code>Spanish (United States)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_US<code></code></code></td>
+      <td>Spanish (United States)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_US</td>
 
     </tr>
     <tr>
-      <td><code>Spanish (Uruguay)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_UY<code></code></code></td>
+      <td>Spanish (Uruguay)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_UY</td>
     </tr>
     <tr>
 
-      <td><code>Spanish (Venezuela)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>es_VE<code></code></code></td>
+      <td>Spanish (Venezuela)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>es_VE</td>
     </tr>
     <tr>
-      <td><code>Spanish</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Spanish</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>es<code></code></code></td>
+      <td>es</td>
     </tr>
     <tr>
-      <td><code>Swedish (Sweden)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sv_SE<code></code></code></td>
+      <td>Swedish (Sweden)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sv_SE</td>
     </tr>
 
     <tr>
-      <td><code>Swedish</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>sv<code></code></code></td>
+      <td>Swedish</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>sv</td>
     </tr>
     <tr>
-      <td><code>Thai (Thailand)</code></td>
+      <td>Thai (Thailand)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>th_TH<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>th_TH</td>
     </tr>
     <tr>
-      <td><code>Thai (Thailand,TH)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>th_TH_TH<code></code></code></td>
+      <td>Thai (Thailand,TH)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>th_TH_TH</td>
 
     </tr>
     <tr>
-      <td><code>Thai</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>th<code></code></code></td>
+      <td>Thai</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>th</td>
     </tr>
     <tr>
 
-      <td><code>Turkish (Turkey)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>tr_TR<code></code></code></td>
+      <td>Turkish (Turkey)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>tr_TR</td>
     </tr>
     <tr>
-      <td><code>Turkish</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
+      <td>Turkish</td>
+      <td>:&nbsp;&nbsp;</td>
 
-      <td><code>tr<code></code></code></td>
+      <td>tr</td>
     </tr>
     <tr>
-      <td><code>Ukrainian (Ukraine)</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>uk_UA<code></code></code></td>
+      <td>Ukrainian (Ukraine)</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>uk_UA</td>
     </tr>
 
     <tr>
-      <td><code>Ukrainian</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>uk<code></code></code></td>
+      <td>Ukrainian</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>uk</td>
     </tr>
     <tr>
-      <td><code>Vietnamese (Vietnam)</code></td>
+      <td>Vietnamese (Vietnam)</td>
 
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>vi_VN<code></code></code></td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>vi_VN</td>
     </tr>
     <tr>
-      <td><code>Vietnamese</code></td>
-      <td><code>:&nbsp;&nbsp;</code></td>
-      <td><code>vi<code></code></code></td>
+      <td>Vietnamese</td>
+      <td>:&nbsp;&nbsp;</td>
+      <td>vi</td>
 
     </tr>
 
 </table>
+
+
+
 </div>
+
+
+<div style="clear:left;">&nbsp;</div>
+
+
+</div>
+<p>&nbsp;</p>
 </body>
 </html>

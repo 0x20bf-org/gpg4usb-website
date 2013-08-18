@@ -1,40 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 <head>
-<title>gpg4usb - Documentation</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<title>gpg4usb - project: howto sign a message</title>
+<meta name="generator" content="Bluefish 2.2.3" >
+<meta name="author" content="sigi" >
+<meta name="date" content="2013-03-04T17:31:20+0100" >
+<meta name="keywords" content="gpg,gnupg,pgp,gpg4usb,encryption,privacy">
+<meta name="description" content="There are three four for encrypting a text. We assume, that Bobby wants to sign a message. After this everyone who has his public key can verify the message and ensure, that the message wasn't modified.">
+<meta name="ROBOTS" content="INDEX, FOLLOW">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="expires" content="0">
+
+
+<link href="style.css" type="text/css" rel="stylesheet" media="screen" lang="EN">
+
 </head>
 
-<body>
-<div id="logo">
-<a href="index.html"><img src="img/weblogo.png" alt="gpg4usb project" /></a>
+<body style="background-image:url(./pics/bg_line.gif); background-repeat:repeat;">
+
+<div id="logo"><a href="./index.html"><img src="pics/gpg4usb-logo.png" width="205" height="91" alt="gpg4usb-logo"></a></div>
+
+<div id="banner">
+<div id="menu">
+<ul>
+<li><a href="./about.html" title="About gpg4usb">About</a></li>
+<li><a href="./docu.html" title="Documentation">Documentation</li>
+<li><a href="./development.html" title="Development">Development</a></li>
+<li><a href="./contact.php" title="Contact">Contact</a></li>
+</ul>
+</div>
 </div>
 
-<div style="width:800px;text-align:center;float:center">
-
-<ul id="menu">
-<li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
-<li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
-<li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
-<li class="active" onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
-<li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
-<li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
-<li onclick="window.location.href='contact.php';"><a href="contact.php">Contact</a></li>
-</ul>
-
-<div style="width:800px;text-align:center;float:center">
-Previous: <a href="docu_decrypt.html">Decrypt a message</a> | Next: <a href="docu_verify.html">Verify a message</a> 
-<hr/>
-
+<div id="container">
+<div style="clear:both;">&nbsp;</div>
 <div id="content">
-
 <h1>Howto sign a message</h1>
 <p><b>NOTE:</b> You can only sign messages, if you have one private key, the file is encrypted for. You can identify the private keys by the "bunch of keys"-image in front of the name in the keylist (in this case Bobby):</p>
 <p>
-<IMG SRC="img/docu/private_key_note.jpg" alt="private key hint"/>
+<img src="./pics/docu/private_key_note.jpg" alt="private key hint"/>
 </p>
 
 <p>
@@ -47,7 +52,7 @@ First Bobby writes the message to the textedit-field. Then he checks his private
 </p>
 
 <p>
-<IMG SRC="img/docu/sign_choose_key.jpg" alt="choose the key"/>
+<img src="./pics/docu/sign_choose_key.jpg" alt="choose the key" width="540px;"/>
 </p>
 
 <h4>STEP 3: Click sign button</h4>
@@ -55,7 +60,7 @@ First Bobby writes the message to the textedit-field. Then he checks his private
 Then Bobby clicks the sign button. 
 </p>
 <p>
-<IMG SRC="img/docu/sign_click_verify.jpg" alt="click verify"/>
+<img src="./pics/docu/sign_click_verify.jpg" alt="click verify" width="540px;"/>
 </p>
 
 
@@ -65,14 +70,38 @@ Now Bobby enters the passphrase of his private key.<br/>
 <b>NOTE:</b> You can only sign messages, if you have a private key. The private keys are those, with the key-icon in front of the Name in the keylist.
 </p>
 <p>
-<IMG SRC="img/docu/sign_enter_passphrase.jpg" alt="enter passphrase"/>
+<img src="./pics/docu/sign_enter_passphrase.jpg" alt="enter passphrase" width="540px;"/>
 </p>
 <p>
 Afterwards the signed message is shown.
 </p>
-<hr/>
-Previous: <a href="docu_decrypt.html">Decrypt a message</a> | Next: <a href="docu_verify.html">Verify a message</a> 
+</div>
+
+<div style="clear:none;">&nbsp;</div>
+<div class="rightbox">
+<div class="box_title">Documentation</div>
+<div class="box_content">
+
+   <p><a href="docu_concepts.html" title="Concepts of GPG">Concepts of GPG</a></p>
+	<p><a href="docu_keygen.html" title="Generating A Key">Generating A Key</a></p>
+	<p><a href="docu_encrypt.html" title="Encrypting Text">Encrypting Text</a></p>
+	<p><a href="docu_decrypt.html" title="Decrypting Text">Decrypting Text</a></p>
+	<p><a href="docu_sign.html" title="Sign Text"><em>Sign Text</em></a></p>
+	<p><a href="docu_verify.html" title="Verify Text">Verify Text</a></p>
+	<p><a href="docu_encrypt_file.html" title="Encrypting A File">Encrypting A File</a></p>
+	<p><a href="docu_decrypt_file.html" title="Decrypting A File">Decrypting A File</a></p>
+	<p><a href="docu_import_key.html" title="Importing Keys">Importing Keys</a></p>
+	<p><a href="docu_export_key.html" title="Exporting Public Keys">Exporting Public Keys</a></p>
+	<p><a href="docu_export_key_private.html" title="Exporting Private Keys">Exporting Private Keys</a></p>
+
 </div>
 </div>
+<div style="clear:right;">&nbsp;</div>
+
+
+<div style="clear:left;">&nbsp;</div>
+
+</div>
+<p>&nbsp;</p>
 </body>
 </html>
