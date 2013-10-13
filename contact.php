@@ -19,42 +19,34 @@ if($_GET['action'] != "" && !empty($_POST['name']) && !empty($_POST['email']) &&
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 
 <head>
-<title>Contact</title>
-<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<title>gpg4usb - project: contact</title>
+<link href="style.css" type="text/css" rel="stylesheet" media="screen" lang="EN">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
 </head>
 
 <body>
-<div id="logo">
-<a href="index.html"><img src="img/weblogo.png" alt="gpg4usb project" /></a>
+<body style="background-image:url(./pics/bg_line.gif); background-repeat:repeat;">
+
+<div id="logo"><a href="./index.html"><img src="./pics/gpg4usb-logo.png" alt="gpg4usb logo"></a></div>
+
+<div id="banner">
+<div id="menu">
+<ul>
+<li><a href="./about.html" title="About gpg4usb">About</a></li>
+<li><a href="./docu.html" title="Documentation">Documentation</li>
+<li><a href="./development.html" title="Development">Development</a></li>
+<li><a href="./contact.php" title="Contact">Contact</a></li>
+</ul>
+</div>
 </div>
 
-<div style="width:800px;text-align:center;float:center">
-<ul id="menu">
-<li onclick="window.location.href='index.html';"><a href="index.html">News</a></li>
-<li onclick="window.location.href='about.html';"><a href="about.html">About</a></li>
-<li onclick="window.location.href='screenshots.html';"><a href="screenshots.html">Screenshots</a></li>
-<li onclick="window.location.href='docu.html';"><a href="docu.html">Documentation</a></li>
-<li onclick="window.location.href='download.html';"><a href="download.html">Download</a></li>
-<li onclick="window.location.href='develop.html';"><a href="develop.html">Develop</a></li>
-<li class="active" onclick="window.location.href='contact.php';"><a href="http://gpg4usb.cpunk.de/contact.php">Contact</a></li>
-</ul>
-
+<div id="container">
+<div style="clear:both;">&nbsp;</div>
 <div id="content">
-<h2>Mailing List</h2>
-<p>Our mailing list is hosted at <a href="http://lists.gzehn.de/mailman/listinfo/gpg4usb" >
-http://lists.gzehn.de/mailman/listinfo/gpg4usb</a>.
-To keep spam level low, sending message is only for subscribers. The 
-<a href="http://lists.gzehn.de/pipermail/gpg4usb/">archive</a> is publicly available.</p>
-
-<h2>Jabber</h2>
-<p>You can meet us in our jabber channel <em>gpg4usb@conference.jabber.ccc.de</em></p>
-
-<h2>Email</h2>
-<p>You can also send a mail to <em>gpg4usb [AT] cpunk.de</em> or use this form to send us a message:</p>
 
 <?php
 
@@ -124,8 +116,9 @@ if ($securimage->check($_POST['captcha_code']) == false) {
 	  // you should handle the error so that the form processor doesn't continue
 	 
 	  // or you can use the following code if there is no validation or you do not know how
-	  echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>The security code entered was incorrect.</p>";
-	  echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Please go <a href='javascript:history.go(-1)'>back</a> and try again.</p>";
+	  header('Location: ./code_fail.html');
+	  //echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>The security code entered was incorrect.</p>";
+	  //echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Please go <a href='javascript:history.go(-1)'>back</a> and try again.</p>";
 	  exit;
 }
 
@@ -147,9 +140,10 @@ mail("gpg4usb@cpunk.de", "Eine neue Nachricht fuer Sie!", $mailnachricht, "From:
 
 // ...und dem Benutzer sagen, dass alles glatt lief!
 
-echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Thanks for your message!</b></font></p>";
-echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Go <a href='javascript:history.go(-1)'>back</a>.</p>";
-exit;
+header('Location: ./thx.html');
+//echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Thanks for your message!</b></font></p>";
+//echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:16px\"><b>Go <a href='javascript:history.go(-1)'>back</a>.</p>";
+ exit;
 }
 
 // Wenn nicht alle Felder ausgefuellt wurden, dann...
@@ -174,9 +168,11 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 ?>
 
+<h1>Contact</h1>
+
 <form id="form" name="form" method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>?action=send">
 
-<table width="500" cellpadding="2" cellspacing="2" style="background-color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:12px">
+<table width="540" cellpadding="2" cellspacing="2" style="background-color:#0000; font-family:Geneva, Arial, Helvetica, sans-serif; font-size:12px">
 
 <tr>
 
@@ -184,9 +180,9 @@ echo "<p><font style=\"color:#0000; font-family:Geneva, Arial, Helvetica, sans-s
 
 Your Name</td>
 
-<td width="250">
+<td width="340">
 
-<input name="name" type="text" id="name" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px" value="<?php echo $_POST['name']; ?>"/></td>
+<input name="name" type="text" id="name" style="background-color:#ADBBCA; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:300px" value="<?php echo $_POST['name']; ?>"/></td>
 
 </tr>
 <tr>
@@ -195,9 +191,9 @@ Your Name</td>
 
 Your Mail-Adress</td>
 
-<td width="250">
+<td width="340">
 
-<input name="email" type="text" id="email" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px" value="<?php echo $_POST['email']; ?>"/></td>
+<input name="email" type="text" id="email" style="background-color:#ADBBCA; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:300px" value="<?php echo $_POST['email']; ?>"/></td>
 
 </tr>
 
@@ -207,9 +203,9 @@ Your Mail-Adress</td>
 
 Your Message</td>
 
-<td width="250">
+<td width="340">
 
-<textarea name="message" id="message" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px; height:250px" rows="4" cols="15"><?php echo $_POST['message']; ?></textarea></td>
+<textarea name="message" id="message" style="background-color:#ADBBCA; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:300px; height:250px" rows="4" cols="15"><?php echo $_POST['message']; ?></textarea></td>
 
 </td>
 
@@ -229,9 +225,9 @@ Your Message</td>
 
 </td>
 
-<td width="250">
+<td width="340">
 <p style="text-align:left;">Enter the text you see in the image on the left:<br /><br />
-<input type="text" name="captcha_code" size="10" maxlength="6" style="background-color:#CCCCCC; font-size:12px;  border: 1px solid #000000;" />
+<input type="text" name="captcha_code" size="16" maxlength="6" style="background-color:#ADBBCA; font-size:12px;  border: 1px solid #000000;" />
 <a href="#" onclick="document.getElementById('captcha').src = '/securimage/securimage_show.php?' + Math.random(); return false">[ Different Image ]</a>
 
 
@@ -239,7 +235,7 @@ Your Message</td>
 
 <!-- <input name="number" type="hidden" id="number"  value="<?php echo md5(( $Zahl_1 + $Zahl_2 )); ?>"/>
 
-<input name="arithmetic" type="text" id="arithmetic" style="background-color:#CCCCCC; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:186px" onfocus="if(this.value=='put the sum in here...')this.value=''" onblur="if(this.value=='')this.value='put the sum in here...'" value="put the sum in here..."/> -->
+<input name="arithmetic" type="text" id="arithmetic" style="background-color:#ADBBCA; font-size:12px; font-family:Geneva, Arial, Helvetica, sans-serif; border : 1px solid #000000; width:250px" onfocus="if(this.value=='put the sum in here...')this.value=''" onblur="if(this.value=='')this.value='put the sum in here...'" value="put the sum in here..."/> -->
 
 </td>
 
@@ -290,38 +286,36 @@ if($_COOKIE["spam_protection"] == "spam_protection")
 </tr>
 </table>
 </form>
-<br /><br />
-<h2>Our gpg-key</h2>
-<p>-----BEGIN PGP PUBLIC KEY BLOCK-----<br />
-Version: GnuPG v1.4.9 (GNU/Linux)<br />
-<br />
-mQGiBEidtoMRBACxTEK5fYugdih9OhO2B3J4v860xVxcaXoveXgykqglNbBXT0+5<br />
-5R1TQu7CIqVHoYb8s3BMaHHarwa+GXvw6ZesV1JVAUt+665AglxuHwQ3IrsSaWlp<br />
-JFwXXaGgrwWyn/aTelzCxom4aw8+DVEL/l0BvYxhgyXoE46VyGdei91jEwCgm0tW<br />
-nd9EyRdae+8e4xL2NSJX3EcEAJTu6LHa/z0BnUsu48ZdFWqhZT7hI2HROyQ18EhH<br />
-fuMhUlynT1O+hFcR9a1CCz7UqHa5ZMGulW4eddWWbeuxIG5nu7LlktD8+qLxXa7d<br />
-JuyPGJgyqC2iW5JNMTTQlaR2/QA0Y1YKNIR6CzkSkR0T4c2pFsVzw0Jqp1BKiJFb<br />
-JYV8BACfd/lPrhkahkCBgVJgrZmRKq6GAqG8+4kNoleGo9x8bTEtt/+WBxrxsxLe<br />
-CQ5oDj56Or+N7cEcOOlK0bW4oM/qFZMLFALhW9a6kFW+z8JqVkb+UeAUZErMj+uI<br />
-uafj/E1Iz2ayN3t43DV44/7/4rfYlaOknm0FqH2emK42NXjahbQiZ3BnNHVzYi1w<br />
-cm9qZWN0IDxncGc0dXNiQGNwdW5rLmRlPohgBBMRAgAgBQJInbaDAhsjBgsJCAcD<br />
-AgQVAggDBBYCAwECHgECF4AACgkQgKRDIS7NczpjuACfYnCtiAso1H9vp8IHVB22<br />
-cLuGP6sAn28nflukImttcSsbgiAol23/89rRuQINBEidtoMQCADAjZhV0Uvgp+il<br />
-JD9RjxWFNmzjnOlLWqThnyK9kyUc9FGGlnq4FMYX34ZGR3ngCqaYlf/Yy54PuUZB<br />
-iQXZHBH1LLJW//Ux0crfselKWvxfMN3UHZl6/ysECeLX5DCNRKCnb1Wqx/0UA6+n<br />
-79H/FSUG94Mf3YNvvrClMiQS17LbnQtmYICoFP/YO2dfc8ghNbLmcyc3XiTv1Puc<br />
-iy9OJhZTASeksVJrir6ZM+Vx8EjYkS7bKtneX+QqlK9E5p3eUshiX4UBgPk1q92w<br />
-DKytmy7QPd4egq1W6cJ9RZ5SioJC70vf1jXkWeiOS3Jjlz1wUybU/q0ybUP3QRim<br />
-0qKwZNk7AAMFCACMwwFEMt56Sm9lAXWrjTKQcyR4ASJr//gJW2Yyc3rCSCSGppTS<br />
-tAgFEaFMca/i3Wyv35cKQy/DejPQfcitaXmmgBDqeX6z8VzPyEVu8I9lnZTWr2Y8<br />
-viqR6p4TSz2u5gSeMT6rNosrukMoehBh4I3eEXAs1pPwyFbJOepJCeMZwFiIZ469<br />
-guXywLRBYvpiAkt29W/q2ndbsRVxq1+PVlXP9HFatt70rTfOlVShkI6vCyWcCl2F<br />
-RlV7niCBkwSr8oH0hrt4GqvCzQtcGG1TrdeLuxBVVM+AACvVBEWxgk5b8yueK7jy<br />
-xAYgEiYDLDtbJysNUCQsV4G35wm1nkaK8/ixiEkEGBECAAkFAkidtoMCGwwACgkQ<br />
-gKRDIS7Nczrg5QCeNh2yio7SPI8TTZWbFCP6wUpjNvoAn3Bgbg7Y+hhzEe0r62Tp<br />
-egB6gGxq<br />
-=8/Ep<br />
------END PGP PUBLIC KEY BLOCK-----<br /></p>
-</div></div>
+
+</div>
+
+<div style="clear:none;">&nbsp;</div>
+<div class="rightbox">
+<div class="box_title">Mailing List</div>
+<div class="box_content"><p>Our mailing list is hosted at <a href="http://lists.gzehn.de/mailman/listinfo/gpg4usb" >
+http://lists.gzehn.de/</a>.
+To keep the spam level low, you have to subscribe to send messages to the list.<br />The 
+<a href="http://lists.gzehn.de/pipermail/gpg4usb/">archive</a> is publicly available.</p>
+</div>
+</div>
+<div style="clear:right;">&nbsp;</div>
+<div class="rightbox">
+<div class="box_title">Jabber</div>
+<div class="box_content"><p>You can meet us in our jabber channel <em>gpg4usb@conference.jabber.ccc.de</em></p>
+</div>
+</div>
+<div style="clear:right;">&nbsp;</div>
+<div class="rightbox">
+<div class="box_title">E-Mail</div>
+<div class="box_content"><p>You can also send a mail to <br /><em>gpg4usb [AT] cpunk.de</em><br />
+Please use our <a href="key.txt" target="_blank">gpg-key</a>
+</p>
+</div>
+</div>
+
+<div style="clear:both;">&nbsp;</div>
+
+</div>
+<p>&nbsp;</p>
 </body>
 </html>
