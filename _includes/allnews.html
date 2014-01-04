@@ -2,7 +2,7 @@
 <h1 style="margin-left: 15px;">History</h1>
 
 <div class="middlebox">
-	<div class="box_title">2013-10-22:</div> 
+	<div class="box_title">2014-01-03:</div> 
     <div class="box_content">
 
     <p>After a long time of silence we have some updates for you.</p>
@@ -11,40 +11,35 @@
         Our domain has moved, now you will find us on <a href="http://gpg4usb.org">http://gpg4usb.org</a>, please update your links.
     </p>
     <p>
-        <strong>Stable Release now with gpg 1.4.15</strong><br/>
-        We have bundled gnupg 1.4.15 with our stable 0.3.2 release. This gnupg version fixes a DoS Bug, see 
-        <a href="http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000334.html">announcement</a>. 
-        If you download <a href="http://gpg4usb.org/download/gpg4usb-0.3.2-1.zip">version 0.3.2-1</a> now, it will contain the updated
-        gpg binary.
-    </p>
+        <strong>New stable Release 0.3.3</strong><br/>
+    <ul>        
+        <li>gpg4usb-0.3.3 fixes a bug which made private key export impossible, 
+            when gpg4usb was started from a path containing non ascii characters.</li>
+        <li>This release contains greek translation, thanks a lot to George.</li>
+        <li>The gpg.conf was modified according to 
+            <a href="http://www.apache.org/dev/openpgp.html#sha1">the apache gnupg 
+            recommondations</a> to avoid the use of sha1.</li>  
+        <li>We have bundled gnupg 1.4.16 with release 0.3.2-1. This gnupg version 
+            fixes a DoS Bug, see 
+            <a href="http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000334.html">announcement 0.4.15</a>, 
+            and also an interesting attack, which allowed to sniff a private key 
+            with a mobilephone ;-)
+            <a href="http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000337.html">announcement 0.4.16</a>.
+        </li>
+    </ul>
+            You may download <a href="http://gpg4usb.org/download/gpg4usb-0.3.3.zip">gpg4usb-0.3.3</a> now.</p>
     <p>
         <strong>FAQ & Known Bugs</strong><br/>
-        We now have a <a href="http://gpg4usb.org/faq.html">FAQ</a> and <a href="http://gpg4usb.org/bugs.html">Known Bugs</a> section on the website, 
-        please look there first if it answers your questions before emailing. Your emails are still welcome, but 
-        some questions should be explained after looking there.
+        We now have a <a href="http://gpg4usb.org/faq.html">FAQ</a> and <a href="http://gpg4usb.org/bugs.html">Known Bugs</a> section on the website, please have a look on these before asking for support.
     </p>
-    <p>
-        <strong>MacOSX & unstbale builds</strong><br/>
-        <a href="http://frontlinedefenders.org/">Frontlinedefenders</a> were so kind to provide us with a mac mini,
-        so we could develop a mac osx version of gpg4usb. Frontlinedefenders is a human rights organisation, which 
-        is providing trainings in communication security to human rights defenders.<br/>
-        So we have been working silently on a mac-version of gpg4usb, which was not as easy as we first thought. 
-        We exchanged our underlaying gpgme library to that one from kgpg, which needed modifications in our whole 
-        code base. But it is easier to maintain by us. This transition is not yet finished, 
-        but we decided that it starts to be sufficient to be used and tested by you. So from now on you could 
-        download unstable builds from
-        <a href="http://gpg4usb.org/nightly/">http://gpg4usb.org/nightly/</a>. We will update this directory whith 
-        more unstable builds as we move along to our next stable release.<br/>
-        Please send feedback about bugs you find, if they are not yet listed on the <a href="http://gpg4usb.org/bugs.html">Known Bugs page</a>.
-    </p>
+
     <p>
         <strong>Donations</strong><br/>
         Some people told us that they like gpg4usb and would want to donate. We are happy if you enjoy gpg4usb, 
         and about your feedback. If you want to donate we would be happy if you support 
         <a href="http://frontlinedefenders.org/donate">Frontlinedefenders</a>, as they could do better things with the 
-        money, and, you know, they provided us with the mac mini :).
+        money, and, you know, they provided us with the mac mini :). You could also take part in the fund raising campaign for gnupg on <a href="http://goteo.org/project/gnupg-new-website-and-infrastructure/">goteo.org</a> if you have some money to spend.
     </p>
-
     </div>
 </div>
 

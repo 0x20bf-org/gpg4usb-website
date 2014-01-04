@@ -12,9 +12,6 @@ Some bugs we alredy know about and are working on fixing:
 
 ##Stable Release (0.3.2-1)
 
-**Exporting private key fails (windows)**
-Only the public key is exported when trying to export the private key, if the directory containing the gpg4usb directory contains russian characters. 
-
 **Brakets set wrong for rtl languages**
 
 In some dialogs brakets are set wrong for rtl languages
