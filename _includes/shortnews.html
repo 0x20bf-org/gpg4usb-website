@@ -2,35 +2,34 @@
 
 
 <div class="middlebox">
-	<div class="box_title">2014-01-03:</div> 
+	<div class="box_title">2014-08-12:</div> 
     <div class="box_content">
-
-    <p>After a long time of silence we have some updates for you.</p>
-    <p>       
-        <strong>Domain move</strong><br/>
-        Our domain has moved, now you will find us on <a href="http://gpg4usb.org">http://gpg4usb.org</a>, please update your links.
-    </p>
     <p>
-        <strong>New stable Release 0.3.3</strong><br/>
+        <strong>New stable release 0.3.3-1</strong><br/>
     <ul>        
-        <li>gpg4usb-0.3.3 fixes a bug which made private key export impossible, 
-            when gpg4usb was started from a path containing non ascii characters</li>
-        <li>this release contains greek translation, thanks a lot to George</li>
-        <li>the gpg.conf was modified according to 
-            <a href="http://www.apache.org/dev/openpgp.html#sha1">the apache gnupg 
-            recommondations</a> to avoid the use of sha1</li>  
-        <li>we have bundled gnupg 1.4.16 with release 0.3.2-1. This gnupg version 
-            fixes a DoS Bug, see 
-            <a href="http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000334.html">announcement 0.4.15</a>, 
-            and also an interesting attack, which allowed to sniff a private key 
-            with a mobilephone ;-) look at 
-            <a href="http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000337.html">announcement 0.4.16</a>
+        <li>gpg4usb-0.3.3-1 additionally contains a 64-bit linux binary, so there's no need to have 32-bit compatibility
+            libraries installed on a 64-bit linux system</li>
+        <li>this release contains japanese translation, thanks a lot to Andoh.</li>
+        <li>we changed the behaviour off the "remove double linebreaks"-action. It doesn't filter Gpg-headers any more
         </li>
     </ul>
-            You may download <a href="http://gpg4usb.org/download/gpg4usb-0.3.3.zip">gpg4usb-0.3.3</a> now.</p>
+            You may download <a href="http://gpg4usb.org/download/gpg4usb-0.3.3-1.zip">gpg4usb-0.3.3-1</a> now.</p>
     <p>
-        <strong>FAQ & Known Bugs</strong><br/>
-        We now have a <a href="http://gpg4usb.org/faq.html">FAQ</a> and <a href="http://gpg4usb.org/bugs.html">Known Bugs</a> section on the website, please have a look on these before asking for support.
+        <strong>New alpha release 0.4</strong><br/>
+	This release additionally contains binaries for MacOS. But since we had to rewrite the whole core, this release needs a lot of testing. So, if you want to be sure, better get the stable release. If you want to have a look what is planned for the release when it is finished have a look on our <a href="http://cpunk.de/svn/src/gpg4usb/trunk/TODO" title="TODO-List">TODO-List</a>.<br/>
+	Changes in this release till now:
+    <ul>  
+<li>added encrypt to self functionality, so that every message additionally is encrypted for the choosen key</li>	
+<li>added find widget</li>	
+<li>added posibility to change path of keydb for using the keydb of other applications</li>	
+<li>show key details in an extra tab, not in a window</li>	
+<li>added refresh key from keyserver</li>	
+<li>added upload key to keyserver</li>	
+<li>added possiblity to add/remove keyservers</li>	
+<li>added posibility for creating RSA-keys</li>	
+<li>removed key management and integrated these functionalities in main window</li>	
+    </ul>      
+	You may download <a href="http://gpg4usb.org/nightly/gpg4usb-0.4.0-alpha-r1120.zip">gpg4usb-0.4-alpha</a> now.
     </p>
 
     <p>
