@@ -298,12 +298,12 @@ To keep the spam level low, you have to subscribe to send messages to the list.<
 <a href="http://lists.gzehn.de/pipermail/gpg4usb/">archive</a> is publicly available.</p>
 </div>
 </div>
-<div style="clear:right;">&nbsp;</div>
+<!-- <div style="clear:right;">&nbsp;</div>
 <div class="rightbox">
 <div class="box_title">Jabber</div>
 <div class="box_content"><p>You can meet us in our jabber channel <em>gpg4usb@conference.jabber.ccc.de</em></p>
 </div>
-</div>
+</div> --> 
 <div style="clear:right;">&nbsp;</div>
 <div class="rightbox">
 <div class="box_title">E-Mail</div>
