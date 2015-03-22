@@ -11,7 +11,7 @@ allnews: true
 
 You are welcome to help us with development. If you want to know what's planned for the 
 next steps in the development of gpg4usb, you should read our 
-[TODO-List](http://cpunk.de/svn/src/gpg4usb/trunk/TODO) first.
+[TODO-List](https://raw.githubusercontent.com/gpg4usb/gpg4usb/master/TODO) first.
 
 Second, you should download and work with the sources of our application (see link on the right). 
 If you have the time and want to help actively for a longer period, please 
