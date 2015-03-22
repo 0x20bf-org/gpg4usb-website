@@ -32,7 +32,7 @@
 <li><a href="./about.html" title="About gpg4usb">About</a></li>
 <li><a href="./docu.html" title="Documentation">Documentation</li>
 <li><a href="./development.html" title="Development">Development</a></li>
-<li><a href="./contact.php" title="Contact">Contact</a></li>
+<li><a href="./contact.html" title="Contact">Contact</a></li>
 </ul>
 </div>
 </div>
@@ -46,6 +46,15 @@
 
  {% if page.download-button %}
     {% include download-button.html %}
+ {% endif %}
+ 
+ {% if page.mailinglist-box %}
+    {% include mailinglist-box.html %}
+ {% endif %}
+
+ {% if page.bugtracker-box %}
+	<div style="clear:right;">&nbsp;</div>
+    {% include bugtracker-box.html %}
  {% endif %}
 
  {% if page.sources-box %}
