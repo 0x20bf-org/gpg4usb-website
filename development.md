@@ -17,8 +17,7 @@ Second, you should download and work with the sources of our application (see li
 If you have the time and want to help actively for a longer period, please 
 [ask for an account](contact.html).
 
-
-[Here is a list of known bugs](bugs.html)
+For a list of of known bugs consult our [bugtracker](https://github.com/gpg4usb/gpg4usb/issues).
 
 # Translation
 
