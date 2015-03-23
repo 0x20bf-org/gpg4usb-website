@@ -16,19 +16,19 @@ Current linux distributions don't allow running from usb flash drive formmated w
 
 You need to install 32-bit compatibility libraries: 
 
-On debian based system these could be installed with
+On debian based system these can be installed with
 
         apt-get install ia32-libs 
 
 or (for newer Ubuntu distributions)
 
-	apt-get install ia32-ibs-multiarch
+	apt-get install ia32-libs-multiarch
 
-On suse these could be installed with
+On Suse these can be installed with
 
         zypper install 32bit
 
-On Red Hat distributions these could be installed with
+On Red Hat distributions these can be installed with
 
         yum install glibc.i686
 
@@ -56,7 +56,7 @@ get your key id (for linux use ./bin/gpg instead):
 
         ./bin/gpg.exe --list-secret-keys --homedir=./keydb
 
-Reset the passphrase (myid contaisn the id of your key. Use ./bin/gpg for linux instead)
+Reset the passphrase (myid contains the id of your key. Use ./bin/gpg for linux instead)
 
 	./bin/gpg.exe --homedir=./keydb --edit-key myid
 	gpg> passwd
