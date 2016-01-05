@@ -26,6 +26,6 @@ Please tell us which version of gpg4usb you are running, on which operating syst
 from a stick or from harddisk and which language you are using.
 
 ## Contact the developers
-You can also send a private mail to **gpg4usb [AT] cpunk.de** 
+You can also send a private mail to **gpg4usb AT cpunk.de** 
 
 Please use our [gpg-key](key.txt)
